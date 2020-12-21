@@ -1,0 +1,208 @@
+.SubfontColor{
+    color:#3B586B;
+}
+.MainFontColor{
+    color:#F27835;
+}
+header{
+    box-shadow: 0 0 3px rgba(0,0,0,.16);
+}
+body{
+    color:#3B586B;
+    background-color: #F3F3F3;
+}
+a{
+    color:#3B586B
+}
+.MainBGColor{
+    background-color: #F27835;
+}
+.SubBGColor{
+    background-color:#3B586B;
+}
+.bodyColor{
+    background-color: #F3F3F3;
+}
+.whiteColor{
+    color:white;
+}
+.searchBtn{
+    background-image: linear-gradient(0deg ,#E15F38,#F27835 50%);
+    border:1px solid #F27835;
+    transition: all .5s;;
+}
+.searchBtn:hover{
+    background-image: none;
+    background-color: white;
+    color:#3B586B;
+    border:1px solid #F27835;
+    transition: all .5s;;
+}
+.searchFormControl{
+    border:1px solid #F3F3F3;
+}
+.topHeader .container{
+    border-bottom: 1px solid #EBEBEB;
+}
+.searchFormControl::placeholder{
+    color:black;
+}
+.profile svg path{
+    fill:#3B586B !important
+}
+.nav-link{
+    color:#3B586B;
+}
+header{
+    border:1px solid #EBEBEB;
+}
+.adsSection span{
+    background-color: white;
+}
+.heroSlider .owl-dot{
+    border:1px solid #BEBEBE !important;
+    margin:7px;
+}
+.heroSlider .owl-dot.active{
+    background-color: #F27835;
+}
+.categItem{
+    background-color: white;
+}
+.categItem:hover{
+    background-color: #F27835 ;
+    transition: all .2s;;
+}
+.categItem:hover h4{
+color:white;
+transition: all .2s;;
+}
+.categSlider .owl-nav button{
+
+    background-color: #F27835 !important;
+}
+.categSlider .owl-nav button:hover{
+    background-color: black !important;
+}
+.categSlider .owl-nav button i{
+color:white;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active ,.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    background-color: transparent; 
+    border-color: transparent
+}
+.nav-tabs .nav-link::before{
+    background-color:#F27835 !important;
+}
+.productDetails{
+border-left:1px dashed rgba(190, 190, 190, .5)
+}
+.Evaluation i{
+    color:#DEDEDE;
+}
+.Evaluation i.fill{
+color:#FFC700;
+}
+.sales{
+    background-color: #FF0000;
+color:white;
+}
+.adsBox{
+    border:1px solid #CCCACA;
+}
+.categBtn .btn{
+    background-color: #FBFBFB;
+    color:#3B586B
+}
+.dropdown-toggle::after,.categBtn .dropdown-item{
+    color:#3B586B
+}
+.dropdown-item:hover{
+    background-color: #F27835;
+    color:white;
+}
+.subscribe .container{
+    background-image: linear-gradient(0deg ,#E15F38,#F27835 50%);
+}
+.closeTime{
+    background-color: #E11841;}
+.CountDown  li{
+    color:white;
+}
+.loginBox .form-group i{
+    color:#F27835;
+}
+.loginBox .form-control:focus{
+    border:1px solid #F27835;
+    
+}
+.loginBtn{
+    background-image: linear-gradient(0deg ,#E15F38,#F27835 50%);
+    border:1px solid #F27835;
+}
+.loginBtn:hover{
+    background-color: transparent;
+    color:#F27835;
+    background-image: none;
+}
+.error{
+    color:#E11841;
+}
+.regTabs{
+    border:1px solid #F27835; 
+    border-radius: 15px;;
+    overflow: hidden; 
+}
+
+.regTabs li .nav-link.active{
+    background-image: linear-gradient(0deg ,#E15F38,#F27835 50%);
+    color:white;
+}
+.titleBar{
+    box-shadow: 0 1px 3px rgba(0,0,0,.16);}
+    .userprof .dropdown-toggle:hover{
+        color:#F27835
+    }
+    .nav-tabs .nav-link.active{
+        color:#F27835
+    }
+.biddersMenu li:hover{
+    background-color: #F27835;
+    transition: all .5s;;
+}
+.biddersMenu li:hover a{
+    color:white !important;
+    transition: all .5s;;
+}
+.biddersMenu li:hover a .LeftBidderSide p span,.biddersMenu li:hover a  .LeftBidderSide p{
+    color:white !important;
+    transition: all .5s;;
+}
+#input-quantity{
+    color:#F27835;
+}
+.dealtabs .tab-pane {
+    padding-bottom:24px;
+    border-bottom:1px solid rgba(190, 190, 190, .5);
+}
+hr{
+    border-bottom:1px solid rgba(190, 190, 190, .5);
+
+}
+.modalCartContent{
+    border-top:1px solid #DEDEDE;
+    border-bottom:1px solid #DEDEDE;
+    }
+    .grayBG{
+        background-color: #F3F3F3;
+        transition: all .5s;;
+    }
+.grayBG:hover{
+    background-image: linear-gradient(0deg ,#E15F38,#F27835 50%);
+        color:white;
+        transition: all .5s;;
+}
+
+.heroSlider .owl-nav button:hover i{
+    color:#E15F38
+}

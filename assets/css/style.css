@@ -1,0 +1,1268 @@
+
+@font-face{
+    font-family:"Tajawal-Regular";
+    src:url("../fonts/Arabic/Tajawal/Tajawal-Regular.ttf");
+}
+@font-face{
+    font-family:"Tajawal-bold";
+    src:url("../fonts/Arabic/Tajawal/Tajawal-Bold.ttf");
+}
+img{
+    width:100%;
+}
+video{
+    min-height: 100%;
+    width: 100%; 
+    background-size: cover;
+    overflow: hidden;
+    object-fit: fill;
+}
+ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:"Tajawal-bold";
+}
+form,.form-group{
+    margin-bottom:0;;
+}
+a:hover{
+    text-decoration: none;
+}
+body{
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    direction: rtl;
+    text-align: right;
+    font-size:14px;
+    font-family:"Tajawal-Regular";
+}
+
+.search{
+    width:100%;
+}
+.searchFormControl{
+    border-radius: 5px;
+    height:44px;
+
+}
+header .container{
+    padding: 0;;
+}
+.scrollNav{
+    top: 0 !important;
+    z-index: 99999999999999999999999;
+    animation-duration: .5s;
+    position: fixed !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
+    transition: 1s all;
+    left: 0;
+    width:100%;
+    right:0;
+    transition: all .5s;;
+    animation:sticky;
+}
+.searchFormControl::placeholder{
+    font-size: 19px;
+
+}
+.searchBtn{
+    display: inline-block;
+    margin-right:5px;
+    width:113px;
+    height:44px;
+    float:right;
+    font-family:"Tajawal-bold";
+
+}
+.topHeader .container{
+    padding: 10px 0;;
+}
+.search .form-group{
+display: inline-block;
+position: relative;
+width:75%;
+float:right;
+}
+.searchIcon{
+    width:24px;
+    position: absolute;
+    left:5px;
+    top:10px;
+}
+.profile{
+    display: inline-block;
+
+}
+.notify{
+    position: relative;
+}
+.notify:before{
+    content:"";
+    position: absolute;
+    background-color: #E11841;
+    width:5px;
+    height:5px;
+    border-radius: 5px;
+    left:-4px;
+    top:0;;
+}
+.profileIcon{
+    width:24px;
+}
+.profileIcon{
+    display: inline-block;
+}
+.profile h3{
+    display: inline-block;
+    font-size:14px;
+    margin-right:11px;
+}
+.menu{
+    padding:13px 0;
+}
+.leftSide{
+    float: left;
+}
+.navbar {
+    padding:0;
+}
+.navbar.navbar-expand-lg{
+float:right;
+transition: all .5s;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-size:14px;
+    font-family:"Tajawal-bold";
+    padding:0;
+    padding:0 20px;
+}
+.navbar-expand-lg .navbar-nav .nav-item:first-child .nav-link{
+    padding-right: 0;
+}
+.whats{
+    margin-left:43px;
+}
+.whats span{
+    font-family:"Tajawal-bold";
+}
+.whats,.languge{
+    display: inline-block;
+}
+.whats span,.languge span{
+    display: inline-block;
+}
+.icon{
+    display: inline-block;
+}
+.whats .icon{
+    width:20px;
+    margin-right:11px;
+}
+.languge .icon{
+    width:36px;
+
+}
+.languge span{
+    font-size:16px;
+    font-family:"Tajawal-bold";
+}
+.profileSection{
+    line-height: 38px;
+    float: left;
+}
+.profileSection a{
+    margin-left:24px
+}
+.heroSection{
+    height:580px;
+    margin-top:17px;
+    margin-bottom: 47px;;
+}
+.adsSection{
+    width:100%;
+    height:50%;
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(0,0,0,.52);
+    width:100%;
+    height:100%;
+}
+.heroSection .container{
+    padding: 0;
+}
+.adsSection span{
+    position: absolute;;
+    font-size:38px;
+    font-family:"Tajawal-bold";
+    top: 27%;
+    right: 6%;
+
+}
+
+.heroSlider .owl-nav{
+    position: absolute;
+    width:100%;
+    top:50%;
+}
+.heroSlider .owl-nav button {
+    position: absolute;
+    left:1%;
+   
+}
+.heroSlider .owl-nav button.owl-prev{
+    right:1%;
+}
+.heroSlider .owl-nav button i{
+    font-size:40px;
+}
+.heroText{
+    display: inline-block;
+    margin-top:10%;
+    width:50%;
+    float: right;
+    padding-right: 40px;;
+}
+.heroText h1{
+font-size:48px;
+margin:0;
+}
+.heroText span{
+    font-size:14px;
+    font-family:"Tajawal-bold";
+    margin-bottom: 12px;
+    display: block;
+}
+.heroText p{
+    font-size: 14px;;
+    margin-bottom:15px;
+}
+.heroImg{
+    display: inline-block;
+    width:50%;
+    float: right;
+}
+.heroSlider .owl-dots{
+    width:100%;
+    text-align: center;
+}
+.heroSlider .owl-dot{
+width:12px;
+height:12px;
+border-radius: 50%;;
+}
+.heroSlider .owl-dot:focus{
+    outline: 0;
+}
+.categItem{
+    padding:17px 20px;
+    border-radius: 5px;;
+    transition: all .5s;;
+    height:60px;
+    line-height: 49px;
+    overflow: hidden;
+}
+.categImage{
+    float: right;
+    width:33px;
+}
+.categImage img{
+    width:auto
+}
+.categItem h4{
+    float:right;
+    margin-right: 5px;;
+    font-size: 24px;;
+    transition: all .5s;;
+  
+}
+.categItem h4.smallFont{
+    font-size: 15px;;
+}
+.categItem:hover img{
+    transition: all .5s;
+    filter: invert(1);
+}
+.categories{
+    margin-bottom: 35px;;
+}
+.categSlider .owl-nav{
+    position: absolute;
+    top:30%;
+    width:100%;
+}
+.categSlider{
+    position: relative;
+}
+.categSlider .owl-nav button{
+    width:30px !important;
+    height:30px !important;
+    border-radius: 50% !important;
+    position: absolute;
+    right:-16px;
+}
+.categSlider .owl-nav button.owl-next{
+    left:-16px;
+    right: auto;
+}
+.nav-tabs {
+width:100%;
+margin:auto;
+justify-content: center;
+}
+.nav-tabs .nav-link{
+    font-size:20px;
+    font-family:"Tajawal-bold";
+    position: relative;
+    display: block;
+    padding-bottom:10px;
+ }
+
+ .nav-tabs .nav-link::before{
+    position: absolute;
+ width:0;
+    height: 4px;
+    border-radius: 25px;;
+    content: "";right: 10%;
+    bottom:-1px;
+    transition: width .5s ;
+}
+.nav-tabs .nav-link.active:before{
+    width:80%;
+    transition: width .5s ;
+}
+.nav-tabs .nav-link.active{
+    color:black;
+}
+.tab-content{
+    padding-top:45px;;
+}
+.tab-pane .row{
+    margin:0;
+}
+.tabsBox{
+    padding:20px;
+    margin-bottom: 15px;
+    height: 290px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.tabsBox:hover{
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+.productDetails{
+    float: right;
+    width:67%;
+}
+.productImg{
+    width: 310px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+.productImg:hover img{
+transform: scale(1.1);
+transition: all .5s;
+}
+.productImg img{
+    transition: all .5s;
+    height: 100%;
+    width: auto;
+    margin: auto;
+}
+.Evaluation{
+    margin-top:12px;
+    margin-bottom: 5px;
+}
+.productDetails h4{
+    font-size: 16px;
+    width:80%;
+}
+.sales{
+    border-radius: 3px;;
+    position: absolute;
+    left:10%;
+    top:10%;
+    width:47px;
+    height:21px;
+    text-align: center;
+}
+
+.cdev{
+    display: inline-block;
+    float: right;
+    margin-right:15px;
+    margin-top:15px;
+    margin-bottom: 20px;;
+    
+}
+.tabsSection .container{
+    padding:0;
+}
+.tabsSection  .tab-pane .col-md-6{
+padding:0 8px;
+}
+.progresscontent{
+    position: absolute;
+    top: 18px;
+    right: 49px;
+    z-index: 222;
+    text-align:  center;
+}
+.progresscontent span{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+.progresscontent span.smallFontProgress{
+ font-size:14px;
+ font-weight: 400;
+}
+.fromNo{
+    opacity: .31;
+}
+.tabsBox p{
+font-size: 24px;
+text-align: center;
+margin:0;
+}
+.tabsBox p.oldPrice{
+    opacity: .31;
+}
+.tabsBox p.newPrice{
+    font-family:"Tajawal-bold";
+}
+.newPrice span{
+    font-size: 14px;
+    font-family:"Tajawal-Regular";
+
+}
+.showMore{
+    font-size: 16px;;
+    font-family:"Tajawal-bold";
+    margin-top:60px;
+    display: block;
+}
+.showMore i{
+    bottom:-9px;
+    position: absolute;
+    animation: MoveUpDown 1s linear infinite;
+}
+.showMore:hover i{
+    animation: none ;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: -10px;
+    }
+  }
+.adsBox{
+    width:100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top:73px;
+    margin-bottom:50px;
+}
+.adsBox .adsText{
+    position: absolute;
+    right:10%;
+    top:33%;
+}
+.adsText h3{
+    font-size:48px;
+    display: inline-block;   
+
+}
+.subscribe{
+    margin-top: -50px;;
+    z-index: 222;
+    margin-bottom: 20px;;
+}
+.subscribeBox{
+    padding: 10px 0;
+    height:70px;
+    line-height: 70px;;
+
+}
+.subscribeBox h5{
+    font-size:16px;
+ 
+    font-size:16px;
+    float:right;
+    line-height: 41px;;
+}
+.subscribeBox form{
+    float:right;
+    margin-right:65px;
+}
+.subscribeBox .form-group{
+    width:540px;
+    float: right;
+}
+.subscribeBox .form-control{
+    height:50px;
+}
+.socialIcons li{
+display: inline-block;
+margin-left:22px;
+}
+.socialIcons li:last-child{
+    margin-left:0;
+}
+.socialIcons{
+    float:left;
+    line-height: 41px;
+}
+.sendSubscribe{
+    font-size:16px;
+    font-family:"Tajawal-bold";
+    margin-right: 25px;
+}
+.socialIcons li a{
+    font-size:15px;
+}
+
+footer{
+    margin-top:80px;
+    padding:20px 0;
+    
+}
+.downloadApp{
+    float:left
+}
+.appImg{
+    display: inline-block;
+}
+.downloadApp .appImg:first-child{
+    margin-left:10px;
+}
+.copyRight {
+font-size:14px;
+line-height: 60px;;
+}
+.categBtn{
+    position: absolute;
+    right:12px;
+    top:-15px;
+    display: none;
+    transition: all .5s;
+}
+.categBtn .btn {
+  float: right; 
+  width:230px;
+  height:51px;
+  font-size:16px;
+  font-family:"Tajawal-bold";
+  text-align: right;
+}
+.dropdown-toggle::after {
+    margin-left: .255em;
+    margin-right:79px;
+    content: "";
+    border-top: .5em solid;
+    border-right: .5em solid transparent;
+    border-bottom: 0;
+    border-left: .5em solid transparent;
+}
+.categBtn .btn i{
+    transform: rotate(180deg);
+    margin-left:13px;
+}
+.categBtn .dropdown-menu{
+right:0 !important;
+text-align: right;
+left:auto;
+padding:0;
+}
+.categBtn .dropdown-item{
+    font-size:16px;
+    font-family:"Tajawal-bold";
+    padding:15px;
+}
+.dropDownImg{
+    width:20px;
+    float:right;
+    margin-left:22px;
+}
+.dropdown-item:hover img{
+    transition: all .5s;
+filter: invert(1);
+}
+.closeTime{
+    border-radius: 10px;
+    padding:10px;
+    width:80%;
+    margin:auto;
+    margin-bottom: 20px;;
+}
+.CountDown{
+    display: inline-block;
+}
+.CountDown li{
+    display: inline-block;
+    text-align: center;
+}
+.closeTime {
+    text-align: center;
+}
+.closeTime span{
+    font-size:14px;
+    font-family:"Tajawal-bold";
+margin-left:10px;}
+.CountDown li span:last-child{
+ font-family:"Tajawal-Regular";
+}
+.CountDown li span:first-child{
+     margin-left:0;
+ }
+.AuctionsBox .productImg{
+    width:277px;
+}
+.AuctionsBox .productDetails{
+padding-left:23px;
+}
+.AuctionsBox h4{
+    font-size: 16px;  
+    margin-bottom: 20px;;
+}
+.AuctionsDetails{
+    display: inline-block;
+    float: right;
+    width:37%;
+    margin-right: 15px;
+}
+.AuctionsNum{
+    float: right;
+    width:45%;
+    margin-left:10px;
+}
+.AuctionsNum:last-child{
+    margin-left:0
+}
+.AuctionsNum h4{
+    font-size: 14px;
+    font-family:"Tajawal-Regular";
+    margin: 0;
+}
+.AuctionsNum p{
+    font-size: 24px;
+    font-family:"Tajawal-bold";
+    margin:0;
+}
+.AuctionsNum p span{
+    font-size:14px;
+    font-family:"Tajawal-Regular";
+}
+.numberOfAuction{
+    margin-top:12px;
+}
+.numberOfAuction .icon{
+width:30px;
+float:right;
+margin-left:5px;
+
+}
+.numberOfAuction span {
+font-size:16px;
+font-family:"Tajawal-bold";
+
+}
+.numberOfAuction span  p{
+    font-size:14px;
+    font-family:"Tajawal-Regular";
+    display: inline-block;
+}
+.loginSection{
+    padding:35px 0;
+}
+.loginBox{
+    border-radius: 10px;
+    padding:10px 60px;
+    text-align: center;
+}
+.loginImg{
+    width:273px;
+    margin:auto;
+    margin-bottom: 10px;
+}
+.loginBox h4{
+font-size: 24px;
+margin-bottom: 20px;;
+}
+.loginBox .form-group{
+    width:100%;
+    margin-bottom:20px;
+    position: relative;
+}
+.loginBox .form-group i{
+    position: absolute;
+    right:5px;
+    top:21px;
+    font-size: 15px;;
+
+}
+.loginBox .form-control{
+    width:100%;
+    height:55px;
+    border-radius: 10px;
+    padding-right: 20;;
+}
+.loginBox .form-control:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.loginBox .form-control::placeholder{
+    font-size:14px;
+    color:#3B586B;
+    opacity: .5;
+    padding-right: 15;;
+}
+.forgetpass{
+    float: left;
+    display: block;
+}
+.loginBtn{
+    width:100%;
+    margin:17px 0;
+    border-radius: 10px;;
+}
+.loginBtn{
+transition: all .5s;;
+height:50px;
+}
+.loginBtn:hover{
+    transition: all .5s;;
+}
+.regLink{
+    margin-top:17px;
+    font-size: 14px;
+    font-family:"Tajawal-Regular";
+}
+.regLink a{
+    font-family:"Tajawal-bold";
+}
+.error{
+    font-size: 14px;
+    font-family:"Tajawal-bold";
+    margin-bottom: 10px;
+    opacity: 0;;
+    display: block
+}
+.regTabs{
+    width:100%;  
+    height:47px; 
+}
+.regTabs li .nav-link:before{
+    display: none;
+}
+.regTabs li{
+    width:50%;
+    border-radius: 15px;
+    height:100%;
+}
+.regTabs li .nav-link{
+    font-size: 14px;
+    font-family:"Tajawal-bold";
+    height: 100%;
+    border-radius: 15px;
+}
+.checkform .form-group{
+    width:48px;
+    float:left;
+    margin-right:13px;
+}
+.checkform  .form-control{
+font-size:36px;
+font-family:"Tajawal-bold";
+padding:0;
+text-align: center;
+}
+.checkcode{
+    width:88%;
+    margin:auto;
+    margin-bottom: 50px;;
+}
+.checkform span{
+    font-size:24px;
+}
+.checkform p{
+    font-size:24px;
+    font-family:"Tajawal-bold";
+}
+.resend{
+    float:right;
+    font-size:14px;
+    display: inline-block;
+}
+ #timer{
+font-size: 14px;;
+}
+.checkform button{
+    margin-bottom: 17px;;
+}
+.changephone{
+    float:left;
+    text-decoration: underline;
+    font-size:14px;
+}
+.disabled{
+    color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.titleBar{
+    height:70px;
+    line-height: 70px;;
+}
+.title a{
+    display: inline-block;
+    color:white;
+    font-size: 16px;
+    margin-right: 10px;;
+}
+.bidContainer{
+    padding-top:40px;
+    padding-bottom: 25px;
+}
+.bidDetails h4{
+    font-size:24px
+}
+.bidDetails .closeTime{
+margin:0;
+margin-top:23px;
+}
+.bidPrice{
+    border-top:1px dashed #DEDEDE;
+    border-bottom:1px dashed #DEDEDE;
+    padding:12px 0;
+    margin-top:42px;
+    margin-bottom:21px;
+
+}
+.minprice {
+    float:right;
+    width:50%;
+}
+.minprice:first-child{
+border-left:1px solid #DEDEDE;
+}
+.minprice span
+{
+font-size: 16px;;
+}
+.minprice span span{
+    font-family:"Tajawal-bold";
+    font-size:24px;
+}
+.requestBid{
+    margin-top:45px;
+}
+.requestBid .form-control{
+    border:1px solid #DEDEDE;
+    border-radius: 5px;
+    height:50px;
+    width:155px;
+    text-align: center;
+
+}
+.requestBid .form-group{
+    margin-left:15px;
+    float:right;
+}
+.requestBid .form-control::placeholder{
+    font-size:24px;
+    font-family:"Tajawal-bold";
+    color:#000000;
+}
+.requestBid .searchBtn{
+    width:203px;
+    height:50px;
+    float:right;
+}
+.minprice.quantity{
+    float: none;
+}
+.userprof .dropdown-toggle::after{
+margin-right:5px;
+border-top: .35em solid;
+border-right: .35em solid transparent;
+border-bottom: 0;
+border-left: .35em solid transparent;
+}
+.userprof .dropdown-toggle{
+    font-size:14px;
+    font-family:"Tajawal-bold";
+}
+.menuNum{
+    float:right;
+    font-size: 24px;
+    font-family:"Tajawal-bold";
+    margin-left:15px;
+}
+.rightBidderSide{
+    float:right;
+    
+}
+.biddersMenu{
+    width:50%;
+    margin:auto;
+}
+.biddersMenu li{
+padding-bottom:18px;
+border-bottom:1px solid rgba(190, 190, 190, .5);
+padding-top:13px;
+padding-left:20px;
+padding-right:20px;
+transition: all .5s;;
+}
+.biddersMenu p{
+margin:0;
+
+}
+.biddersMenu .rightBidderSide p:first-child{
+    margin-right:40px;
+    margin-bottom:5px;
+}
+.biddersMenu p.bidderName{
+    font-size:16px;
+    font-family:"Tajawal-bold";
+}
+.LeftBidderSide{
+    float:left;
+}
+.LeftBidderSide p{
+    font-size:14px;
+}
+.LeftBidderSide p span{
+    font-size:24px;
+    font-family:"Tajawal-bold";
+}
+.LeftBidderSide p span.LeftBidderSideSpan{
+    font-size:24px;
+    display: inline-block;
+    font-family:"Tajawal-Regular";
+}
+.productTabs{
+    margin-top:23px;
+}
+.image{
+    width:85%;
+    margin-right:18px; 
+    overflow: hidden;
+    border:1px solid #BEBEBE;
+    position: relative;
+    float:right;
+}
+.image img{
+    width:100% !important
+}
+.bidImageSlider ul li{
+    display: inline-block;
+    float: right;
+}
+.bidImageSlider ul li:first-child{
+    width:80px;
+}
+/*set a border on the images to prevent shifting*/ 
+/*Change the colour*/
+#gallery_01  .elevatezoom-gallery.active img{border:2px solid #333 !important;}
+#gallery_01{
+	width:10%;
+overflow: hidden;
+display: block !important;
+float:right;
+height:450px !important
+}
+
+
+#gallery_01 .owl-item {
+    display: block;
+}
+.fancybox-overlay-fixed{
+    z-index:999999999999999999999999;
+}
+.RateSection{
+    margin-bottom:31px;
+    margin-top: 38px;;
+}
+.offers .newPrice{
+    font-size:30px;
+    font-family:"Tajawal-bold";
+}
+.offers .oldPrice{
+opacity: .5;
+}
+.qty-plus-minus{
+    display: inline-block;
+    vertical-align: middle;
+    width:160px;
+    height:50px
+}
+
+.qty-plus-minus .form-control {
+    width: 45px;
+    text-align: center;
+    border-radius: 4px 0px 0px 4px;
+}
+.btnminus span, .btnplus span {
+    position: unset;
+}
+.qty-plus-minus .form-control {
+    width: 45px;
+    text-align: center;
+    border-radius: 4px 0px 0px 4px;
+    border:0;
+}
+.qty-plus-minus button,.qty-plus-minus input{
+    float:right;
+    background-color: #F8F8F8;
+    border-radius: 4px 0px 0px 4px;
+   
+}
+#input-quantity{
+font-size:24px;
+text-align: center;
+font-family:"Tajawal-bold";
+border:0;
+border-radius: 0;
+    
+}
+.qty-plus-minus .form-control.btnminus{
+    border-radius: 0px 4px 4px 0px
+}
+.glyphicon-plus:before {
+    content: "\2b";
+    font-size: 34px;
+    line-height: 38px;
+}
+.glyphicon-minus:before {
+    content: "\2212";
+    font-size: 34px;
+    line-height: 38px;
+}
+.dealPrice .minprice{
+    width:auto;
+
+}
+.dealPrice .minprice:first-child{
+    padding-left:60px;
+    margin-left:30px;
+}
+.dealRate h5,.writecomment h5{
+    font-size:24px;
+    margin-right:15px;
+}
+.dealRate  h6{
+    font-size:14px;
+}
+.dealRateSection{
+    margin-bottom: 16px;;
+}
+.dealRate{
+    padding-bottom:24px;
+   
+}
+.writecomment,.dealRate{
+    width:68%;
+    margin:auto; 
+}
+
+.comment textarea.form-control{
+    width:100%;
+    height:170px;
+    resize: none;
+    margin-bottom: 17px;;
+}
+.comment{
+    margin-bottom:28px;
+}
+.sendComment{
+    width:202px;
+}
+.CommentRate h6{
+    font-size:16px;
+    display: inline-block;
+    margin-left:16px;
+}
+.CommentRate i{
+    font-size:13px;
+}
+.modal{
+    z-index: 999999999999999999999999999;
+}
+.modal .modal-content{
+    border-radius: 20px;
+    overflow: hidden;
+    width: 800px;
+    margin: auto;
+    left: 30%;
+
+}
+.modal  .modal-header{
+    height:46px;
+    line-height: 46px;;
+}
+.modal-title{
+    line-height: 16px;
+    font-size:10px;
+}
+.modal  .modal-header button i{
+    line-height: 0px;
+    font-size: 10px;
+}
+.modal-body{
+    padding:27px 50px;
+}
+.modalproductImg{
+    float:right;
+    margin-left:18px;
+    width:30%;
+    overflow: hidden;
+}
+.productModalDetails{
+    margin-bottom:17px;
+}
+.modalCartContent{
+padding-top:10px;
+padding-bottom:25px;
+margin-bottom:28px;
+}
+.bidmodalDesc{
+    float:right;
+    width:65%;
+}
+.bidmodalDesc h4{
+    font-size:23px;
+}
+.modalCartContent p{
+font-size:18px;
+margin-bottom:20xp
+}
+.ModaltotlaCartPrice{
+    font-size:10px;
+}
+.ModaltotlaCartPrice b{
+    font-size:11px;
+}
+.ModaltotlaCartPrice h6{
+font-size:20px;
+margin-right:8px;
+display: inline-block;
+margin-left:5px;
+}
+.modalFooter{
+    text-align: center;
+    margin:auto
+}
+.modalFooter button{
+    float:none;
+    height:43px;
+}
+.modalFooter button:first-child{
+    margin-left:5px;
+}
+.grayBG{
+    font-family:"Tajawal-bold";
+}
+.modalFooter button.conditionsBtn{
+    float:right;
+    width:auto
+}
+.conditions li{
+    font-size:16px;
+    margin-bottom:10px;
+    list-style-type: symbols(-);
+}
+.conditions{
+margin-bottom:36px;
+} 
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin: 8px;
+    border: 3px solid red;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: red transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.emptyCartIcon{
+    width:268px;
+    margin:auto;
+
+}
+.emptyCart{
+    text-align: center;
+}
+.emptyCart h4{
+    font-size:36px;
+    margin-bottom:13px;
+}
+.emptyCart p{
+font-size:16px;
+margin-bottom:25px;
+}
+.shopBtn{
+    width:100%;
+}
+.categSearch{
+    padding:10px;
+}
+.jq-star{
+    transform: scale(-1,1);
+}
+@media(min-width:300px) and (max-width:767px){
+    .subscribeBox .form-group{
+        width:100%;
+    
+    }
+    .sendSubscribe{
+        margin-right:0;
+        margin-top:20px;
+    }
+    .socialIcons{
+        float:right
+    }
+    .subscribeBox form{
+        margin-right:0;
+    }
+}
