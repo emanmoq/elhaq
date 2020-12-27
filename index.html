@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
+
   <title>elhaq</title>
   <!--Css Files and Fonts-->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -26,33 +27,125 @@
 </head>
 
 <body class="SubfontColor">
+  <div class="bodyoverlay"></div>
   <!--Header Start-->
   <header class="bg-white">
     <!--Start Top Header-->
     <div class="topHeader">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <div class="d-lg-none d-md-none d-block col-4">
+            <!--Mobile Navbar-->
+            <div class="mobileMenu">
+              <nav class="navbar navbar-expand-lg ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="close"><i class="lni lni-close"></i></div>
+                  <div class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">الرئيسية </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">عن الموقع </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">الصفقات </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">المزادات </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">اتصل بنا </a>
+                    </li>
+                  </div>
+                  <div class="categMenu mobileCategMenu">
+                    <div class="dropdown categBtn">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-expanded="false">
+                        التصنيفات
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li>
+                          <form action="" class="categSearch"><input type="text" class="form-control" placeholder="بحث">
+                            <button class="searchIcon" type="submit"><i class="fas fa-search"></i></button>
+                          </form>
+                        </li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/1.png" alt=""></div>ألكل
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/1.png" alt=""></div>ملابس
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/gift.png" alt=""></div>هدايا
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/3.png" alt=""></div>عطور
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/4.png" alt=""></div>أحذية
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/44.png" alt=""></div>ألعاب
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/5.png" alt=""></div>هواتف
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/6.png" alt=""></div>أثاث
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/5.png" alt=""></div>هواتف
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/6.png" alt=""></div>أثاث
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/5.png" alt=""></div>هواتف
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/6.png" alt=""></div>أثاث
+                          </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="langugeMobile">
+                    <a href="">اللغة الانجليزية</a>
+                  </div>
+                  <div class="loginMobile">
+                    <a href=""> تسجيل الدخول</a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <button class="searchIcon MobilesearchIcon" type="submit"><i class="fas fa-search"></i></button>
+
+          </div>
+          <div class="col-lg-2 col-md-4 col-4">
             <a href="index.html" class="logo">
               <img src="assets/images/logo.png" alt="">
             </a>
           </div>
-          <div class="col-md-6">
-            <div class="search ">
+          <div class=" col-lg-6 col-md-12  order-lg-2 order-md-3  d-lg-block d-md-block d-none">
+            <div class="search clearfix">
               <form>
                 <div class="form-group">
                   <input type="text" placeholder="ابحث هنا" class="form-control searchFormControl">
-                  <div class="searchIcon">
-                    <img src="assets/images/Icons/search.png" alt="">
-                  </div>
+                  <button class="searchIcon" type="submit"><i class="fas fa-search"></i></button>
+
                 </div>
                 <button class="btn searchBtn MainBGColor whiteColor"> بحث متقدم</button>
               </form>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4 col-md-8 col-4 order-lg-3 order-md-2 order-3">
             <div class="profileSection">
-              <div class="profile">
+              <div class="profile d-lg-inline-block d-md-inline-block d-none">
                 <a href="login.html">
                   <div class="profileIcon">
                     <img src="assets/images/Icons/profile.png" alt="">
@@ -61,7 +154,7 @@
                 </a>
               </div>
               <div class="profile">
-                <a href="#">
+                <a href="#" class="notify">
                   <div class="profileIcon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                       <g fill="none" fill-rule="evenodd">
@@ -75,7 +168,7 @@
                 </a>
               </div>
               <div class="profile">
-                <a href="#">
+                <a href="#" class="notify">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <g fill="none" fill-rule="evenodd">
                       <rect width="24" height="24" />
@@ -89,10 +182,20 @@
           </div>
         </div>
       </div>
+      <div class="search mobileSearchSection d-lg-none d-md-none">
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="ابحث هنا" class="form-control searchFormControl">
+            <button class="searchIcon" type="submit"><i class="fas fa-search"></i></button>
+
+          </div>
+          <button class="btn searchBtn mainfontColor mobilesearchBtn"> بحث متقدم</button>
+        </form>
+      </div>
     </div>
     <!--End Top Header-->
     <!--Start Menu-->
-    <div class="menu">
+    <div class="menu d-lg-block  d-md-block d-none">
       <div class="container">
         <div class="row">
           <div class="col-md-12 clearfix">
@@ -103,10 +206,14 @@
                   <i class="fas fa-list"></i>التصنيفات
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li> <form action="" class="categSearch"><input type="text" class="form-control" placeholder="بحث"></form> </li>
+                  <li>
+                    <form action="" class="categSearch"><input type="text" class="form-control" placeholder="بحث">
+                      <button class="searchIcon" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                  </li>
                   <li><a class="dropdown-item" href="#">
-                    <div class="dropDownImg"><img src="assets/images/1.png" alt=""></div>ألكل
-                  </a></li>
+                      <div class="dropDownImg"><img src="assets/images/1.png" alt=""></div>ألكل
+                    </a></li>
                   <li><a class="dropdown-item" href="#">
                       <div class="dropDownImg"><img src="assets/images/1.png" alt=""></div>ملابس
                     </a></li>
@@ -171,7 +278,7 @@
               </a>
               <!--Languge-->
               <a href="#" class="languge">
-                <div class="icon"><img src="assets/images/Icons/En.png" alt=""></div>
+                <div class="icon"><img src="assets/images/global.png" alt=""></div>
                 <span>
                   English
                 </span>
@@ -188,7 +295,7 @@
   <section class="heroSection">
     <div class="container bg-white">
       <div class="row">
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-12-6 d-lg-block d-md-block d-none ">
           <div class="adsSection">
             <span class="mainfontColor">مساحة إعلانية<br> صورة</span>
             <img src="assets/images/ads1.png" alt="">
@@ -201,40 +308,34 @@
 
           </div>
         </div>
-        <div class="col-lg-8 col-md-6">
+        <div class="col-lg-8 col-md-12">
           <div class="heroSlider owl-carousel">
             <div class="heroItem clearfix">
-              <div class="heroText">
-                <h1 class="mainfontColor">
-                  سمــاعــات رأس
-                </h1>
-                <span class="mainfontColor">طراز 9851</span>
-                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
-                  يمكنك أن تولد مثل هذا النص أو العديد من النصوص</p>
-                <a href="" class="btn heroBtn searchBtn MainBGColor whiteColor">تســـوق الـأن</a>
-              </div>
-              <div class="heroImg">
-                <img src="assets/images/heroimg.png" alt="">
+              <div class="heroContent">
+                <div class="heroText">
+                  <h1 class="mainfontColor">
+                    سمــاعــات رأس
+                  </h1>
+                  <span class="mainfontColor">طراز 9851</span>
+                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                    يمكنك أن تولد مثل هذا النص أو العديد من النصوص</p>
+                  <a href="" class="btn heroBtn searchBtn MainBGColor whiteColor">تســـوق الـأن</a>
+                </div>
+                <div class="heroImg">
+                  <img src="assets/images/heroimg.png" alt="">
+                </div>
               </div>
             </div>
             <div class="heroItem clearfix">
               <video controls="" poster="assets/images/ads2.png">
                 <source src="assets/images/1.mp4" type="video/mp4">
               </video>
-           
+
             </div>
             <div class="heroItem clearfix">
-              <div class="heroText">
-                <h1 class="mainfontColor">
-                  سمــاعــات رأس
-                </h1>
-                <span class="mainfontColor">طراز 9851</span>
-                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
-                  يمكنك أن تولد مثل هذا النص أو العديد من النصوص</p>
-                <a href="" class="btn heroBtn searchBtn MainBGColor whiteColor">تســـوق الـأن</a>
-              </div>
-              <div class="heroImg">
-                <img src="assets/images/heroimg.png" alt="">
+              <div class="heroSliderImg" >
+                <div class="overlay"></div>
+                <img src="assets/images/ads2.png" alt="">
               </div>
             </div>
 
@@ -246,59 +347,119 @@
   <!--Hero Section End-->
   <!--categories Section Start-->
   <section class="categories">
-    <div CLASS="container">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="categSlider owl-carousel">
-            <div class="categItem clearfix">
-              <div class="categImage">
+            <div class="categItem clearfix" style="display: flex;">
+              <div class="categImage align-self-center ">
                 <img src="assets/images/1.png" alt="">
               </div>
-              <h4 class="SubfontColor">الكل</h4>
+              <div class="textCont  align-self-center clearfix">
+                <h4 class="SubfontColor">الكل</h4>
+              </div>
             </div>
             <div class="categItem clearfix">
               <div class="categImage">
                 <img src="assets/images/1.png" alt="">
               </div>
-              <h4 class="SubfontColor">ملابس</h4>
+              <div class="textCont clearfix">
+                <h4 class="SubfontColor">ملابس</h4>
+              </div>
             </div>
             <div class="categItem clearfix">
               <div class="categImage">
-                <img src="assets/images/2.png" alt="">
+
+                <img src="assets/images/6.png" alt="">
               </div>
-              <h4 class="SubfontColor">حقائب</h4>
+              <div class="textCont clearfix">
+                <h4 class="SubfontColor">حقائب</h4>
+              </div>
             </div>
             <div class="categItem clearfix">
               <div class="categImage">
                 <img src="assets/images/3.png" alt="">
               </div>
-              <h4 class="SubfontColor">عطور</h4>
+              <div class="textCont clearfix">
+                <h4 class="SubfontColor">عطور</h4>
+              </div>
             </div>
             <div class="categItem clearfix">
               <div class="categImage">
                 <img src="assets/images/4.png" alt="">
               </div>
-              <h4 class="SubfontColor">أحذية</h4>
+              <div class="textCont clearfix">
+                <h4 class="SubfontColor">أحذية</h4>
+              </div>
             </div>
             <div class="categItem clearfix">
               <div class="categImage">
                 <img src="assets/images/5.png" alt="">
               </div>
-              <h4 class="SubfontColor smallFont">اكسسوارات <br>جوال</h4>
+              <div class="textCont clearfix">
+                <h4 class="SubfontColor smallFont">اكسسوارات جوال</h4>
+              </div>
             </div>
             <div class="categItem clearfix">
               <div class="categImage">
                 <img src="assets/images/6.png" alt="">
               </div>
-              <h4 class="SubfontColor"> تحف</h4>
+              <div class="textCont clearfix">
+                <h4 class="SubfontColor"> تحف</h4>
+              </div>
+            </div>
+            <div class="categItem clearfix">
+              <div class="categImage">
+                <img src="assets/images/1.png" alt="">
+              </div>
+              <div class="textCont clearfix">
+                <h4 class="SubfontColor">ملابس</h4>
+              </div>
+            </div>
+            <div class="categItem clearfix">
+              <div class="categImage">
+
+                <img src="assets/images/6.png" alt="">
+              </div>
+              <div class="textCont clearfix">
+                <h4 class="SubfontColor">حقائب</h4>
+              </div>
+            </div>
+            <div class="categItem clearfix">
+              <div class="categImage">
+                <img src="assets/images/3.png" alt="">
+              </div>
+              <div class="textCont clearfix">
+                <h4 class="SubfontColor">عطور</h4>
+              </div>
+            </div>
+            <div class="categItem clearfix">
+              <div class="categImage">
+                <img src="assets/images/4.png" alt="">
+              </div>
+              <div class="textCont clearfix">
+                <h4 class="SubfontColor">أحذية</h4>
+              </div>
+            </div>
+            <div class="categItem clearfix">
+              <div class="categImage">
+                <img src="assets/images/5.png" alt="">
+              </div>
+              <div class="textCont clearfix">
+                <h4 class="SubfontColor smallFont">اكسسوارات جوال</h4>
+              </div>
             </div>
             <div class="categItem clearfix">
               <div class="categImage">
                 <img src="assets/images/6.png" alt="">
               </div>
-              <h4 class="SubfontColor"> تحف</h4>
+              <div class="textCont clearfix">
+                <h4 class="SubfontColor"> تحف</h4>
+              </div>
             </div>
+
           </div>
+
         </div>
       </div>
     </div>
@@ -324,7 +485,7 @@
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-deals" role="tabpanel" aria-labelledby="nav-deals-tab">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                   <a href="#">
                     <div class="tabsBox bg-white clearfix">
                       <div class="productDetails ">
@@ -343,17 +504,17 @@
                         <span class="progresscontent">
                           <span class="SubfontColor ">1500</span>
                           <span class="smallFontProgress SubfontColor">متبقية</span>
-                          <span class="smallFontProgress SubfontColor">من اصل</span>
+                          <span class="smallFontProgress SubfontColor opacityFont">من اصل</span>
                           <span class="SubfontColor fromNo">3150</span>
                         </span>
                       </div>
-                      <p class="oldPrice SubfontColor"><strike>150 دينار</strike></p>
+                      <p class="oldPrice  SubfontColor"><strike>150 <span>دينار</span></strike></p>
                       <p class="newPrice mainfontColor">119.99 <span class="SubfontColor">دينار</span></p>
 
                     </div>
                   </a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                   <a href="#">
                     <div class="tabsBox bg-white clearfix">
                       <div class="productDetails ">
@@ -362,11 +523,7 @@
                           <span class="sales">65%</span>
                         </div>
                         <div class="Evaluation">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                          <i class="far fa-star"></i>
-                          <i class="far fa-star"></i>
+                          <div class="my-rating" data-rating="5"></div>
                         </div>
                         <h4 class="SubfontColor">ساعة رياضية عصرية ضد الماء التراب
                           ماركة جديدة وعصرية
@@ -376,7 +533,7 @@
                         <span class="progresscontent">
                           <span class="SubfontColor ">1500</span>
                           <span class="smallFontProgress SubfontColor">متبقية</span>
-                          <span class="smallFontProgress SubfontColor">من اصل</span>
+                          <span class="smallFontProgress SubfontColor opacityFont">من اصل</span>
                           <span class="SubfontColor fromNo">3150</span>
                         </span>
                       </div>
@@ -386,7 +543,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                   <a href="#">
                     <div class="tabsBox bg-white clearfix">
                       <div class="productDetails ">
@@ -395,11 +552,7 @@
                           <span class="sales">65%</span>
                         </div>
                         <div class="Evaluation">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                          <i class="far fa-star"></i>
-                          <i class="far fa-star"></i>
+                          <div class="my-rating" data-rating="5"></div>
                         </div>
                         <h4 class="SubfontColor">ساعة رياضية عصرية ضد الماء التراب
                           ماركة جديدة وعصرية
@@ -409,7 +562,7 @@
                         <span class="progresscontent">
                           <span class="SubfontColor ">1500</span>
                           <span class="smallFontProgress SubfontColor">متبقية</span>
-                          <span class="smallFontProgress SubfontColor">من اصل</span>
+                          <span class="smallFontProgress SubfontColor opacityFont">من اصل</span>
                           <span class="SubfontColor fromNo">3150</span>
                         </span>
                       </div>
@@ -419,7 +572,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                   <a href="#">
                     <div class="tabsBox bg-white clearfix">
                       <div class="productDetails ">
@@ -428,11 +581,7 @@
                           <span class="sales">65%</span>
                         </div>
                         <div class="Evaluation">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                          <i class="far fa-star"></i>
-                          <i class="far fa-star"></i>
+                          <div class="my-rating" data-rating="5"></div>
                         </div>
                         <h4 class="SubfontColor">ساعة رياضية عصرية ضد الماء التراب
                           ماركة جديدة وعصرية
@@ -442,7 +591,7 @@
                         <span class="progresscontent">
                           <span class="SubfontColor ">1500</span>
                           <span class="smallFontProgress SubfontColor">متبقية</span>
-                          <span class="smallFontProgress SubfontColor">من اصل</span>
+                          <span class="smallFontProgress SubfontColor opacityFont">من اصل</span>
                           <span class="SubfontColor fromNo">3150</span>
                         </span>
                       </div>
@@ -461,9 +610,10 @@
             </div>
             <div class="tab-pane fade " id="nav-Auctions" role="tabpanel" aria-labelledby="nav-Auctions-tab">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                   <a href="#">
                     <div class="tabsBox AuctionsBox bg-white clearfix">
+                      <div class="closed">مغلق</div>
                       <div class="closeTime">
                         <span class="whiteColor">موعد الاغلاق</span>
                         <ul class="CountDown">
@@ -490,7 +640,7 @@
                       <div class="AuctionsDetails">
                         <h4 class="SubfontColor">ساعة رياضية عصرية ضد
                           الماء الترابماركة جديدة وعصرية
-                         
+
                         </h4>
                         <div class="AuctionSection clearfix">
                           <div class="AuctionsNum">
@@ -509,14 +659,15 @@
                           <span class="mainfontColor">12 <p class="SubfontColor">متزايد</p></span>
                         </div>
                       </div>
-   
+
 
                     </div>
                   </a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                   <a href="#">
                     <div class="tabsBox AuctionsBox bg-white clearfix">
+                      <div class="closed">مغلق</div>
                       <div class="closeTime">
                         <span class="whiteColor">موعد الاغلاق</span>
                         <ul class="CountDown">
@@ -543,7 +694,7 @@
                       <div class="AuctionsDetails">
                         <h4 class="SubfontColor">ساعة رياضية عصرية ضد
                           الماء الترابماركة جديدة وعصرية
-                         
+
                         </h4>
                         <div class="AuctionSection clearfix">
                           <div class="AuctionsNum">
@@ -562,14 +713,15 @@
                           <span class="mainfontColor">12 <p class="SubfontColor">متزايد</p></span>
                         </div>
                       </div>
-   
+
 
                     </div>
                   </a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                   <a href="#">
                     <div class="tabsBox AuctionsBox bg-white clearfix">
+                      <div class="closed">مغلق</div>
                       <div class="closeTime">
                         <span class="whiteColor">موعد الاغلاق</span>
                         <ul class="CountDown">
@@ -596,7 +748,7 @@
                       <div class="AuctionsDetails">
                         <h4 class="SubfontColor">ساعة رياضية عصرية ضد
                           الماء الترابماركة جديدة وعصرية
-                         
+
                         </h4>
                         <div class="AuctionSection clearfix">
                           <div class="AuctionsNum">
@@ -615,14 +767,15 @@
                           <span class="mainfontColor">12 <p class="SubfontColor">متزايد</p></span>
                         </div>
                       </div>
-   
+
 
                     </div>
                   </a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                   <a href="#">
                     <div class="tabsBox AuctionsBox bg-white clearfix">
+                      <div class="closed">مغلق</div>
                       <div class="closeTime">
                         <span class="whiteColor">موعد الاغلاق</span>
                         <ul class="CountDown">
@@ -649,7 +802,7 @@
                       <div class="AuctionsDetails">
                         <h4 class="SubfontColor">ساعة رياضية عصرية ضد
                           الماء الترابماركة جديدة وعصرية
-                         
+
                         </h4>
                         <div class="AuctionSection clearfix">
                           <div class="AuctionsNum">
@@ -668,7 +821,7 @@
                           <span class="mainfontColor">12 <p class="SubfontColor">متزايد</p></span>
                         </div>
                       </div>
-   
+
 
                     </div>
                   </a>
@@ -706,39 +859,94 @@
   <!--Subscribe section End-->
   <!--Footer-->
   <footer class="SubBGColor footer">
- <!--Subscribe start-->
- <section class="subscribe ">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="subscribeBox clearfix">
-          <h5 class="whiteColor"> اشترك معنا في النشرة البريدية</h5>
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="أدخل البريد الالكتروني">
+    <!--Subscribe start-->
+    <section class="subscribe ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="subscribeBox clearfix">
+              <h5 class="whiteColor"> اشترك معنا في النشرة البريدية</h5>
+              <form class="clearfix">
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="أدخل البريد الالكتروني">
+                </div>
+                <button class="sendSubscribe btn whiteColor" type="submit"> ارسال</button>
+                <ul class="socialIcons">
+                  <li>
+                    <a href="" class="whiteColor"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="" class="whiteColor"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="" class="whiteColor"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </form>
+
             </div>
-            <button class="sendSubscribe btn whiteColor" type="submit"> ارسال</button>
-          </form>
-          <ul class="socialIcons">
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--subscribe End-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-12">
+          <h5 class="footerTitle">نبذة عنا</h5>
+          <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
+            تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+          </p>
+        </div>
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-2 col-md-6  col-12">
+          <h5 class="footerTitle"> روابط</h5>
+          <ul class="footerList">
             <li>
-              <a href="" class="whiteColor"><i class="fab fa-facebook-f"></i></a>
+              <a href="#">وظائف
+              </a>
             </li>
             <li>
-              <a href="" class="whiteColor"><i class="fab fa-twitter"></i></a>
+              <a href="#">المساعدة
+              </a>
             </li>
             <li>
-              <a href="" class="whiteColor"><i class="fab fa-instagram"></i></a>
+              <a href="#">الشحن والتوصيل
+              </a>
+            </li>
+            <li>
+              <a href="#"> التبديل و الإرجاع
+              </a>
             </li>
           </ul>
         </div>
 
-
+        <div class="col-lg-5 col-md-6  col-12">
+          <h5 class="footerTitle"> التطبيق</h5>
+          <p class="appText">للحصول على أفضل تجربة تسوق
+            يرجى تنزيل التطبيق الخاص بنا</p>
+          <div class="maindownloadApp">
+            <div class="appImg">
+              <a href=""> <img src="assets/images/app.png" alt=""></a>
+            </div>
+            <div class="appImg">
+              <a href=""><img src="assets/images/google.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="mainCopyrights whiteColor text-center">
+            جميع الحقوق محفوظة موقع إلحق © 2020
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
- <!--subscribe End-->
-    <div class="container">
+    <!--
+      <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="copyRight whiteColor">
@@ -757,6 +965,7 @@
         </div>
       </div>
     </div>
+-->
   </footer>
   <!--footer End-->
 
@@ -770,60 +979,83 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/carousel/owl.carousel.js"></script>
   <script src="assets/lib/Progress/circlos.js"></script>
-  <script src="assets/lib/countDown/multi-countdown.js"></script>
   <script src="assets/lib/rating/jquery.star-rating-svg.js"></script>
 
-<!--Ratine-->
-<script>
-  $(".my-rating").starRating({
-    starSize: 16,
-    rtl:true,
-    activeColor:'#F9D674',
-    hoverColor:'#F9D674',
-    ratedColor:'#F9D674',
-    emptyColor	:'#F3F3F3',
-    starShape:'rounded',
-    ratedColors:'F9D674',
-    useGradient:false,
-    callback: function(currentRating, $el){
-        // make a server call here
-    }
-});
-</script>
-<!--circular progress script-->
-<script>
-  $(document).ready(function () {
-    // init
-    $(".cdev").circlos();
+
+  <!--circular progress script-->
+  <script>
+    $(document).ready(function () {
+      // init
+      $(".cdev").circlos();
 
 
-  });
-</script>
+    });
+  </script>
   <script type="text/javascript" src="assets/js/main.js"></script>
 
   <script type="text/javascript" src="assets/js/countDown/downcounter.js"></script>
-<!--Countdown sript-->
-<script>
-  function e() {
-    var e = new Date;
-    e.setDate(e.getDate() + 60);
+  <!--Countdown sript-->
+  <script>
+    function e() {
+      var e = new Date;
+      e.setDate(e.getDate() + 50);
 
-    var dd = e.getDate();
-    var mm = e.getMonth() + 1;
-    var y = e.getFullYear();
+      var dd = e.getDate();
+      var mm = e.getMonth() + 1;
+      var y = e.getFullYear();
 
-    var futureFormattedDate = mm + "/" + dd + "/" + y + ' 12:00:00';
+      var futureFormattedDate = mm + "/" + dd + "/" + y + ' 12:19:00';
 
-    return futureFormattedDate;
-  }
-  $('.countDown').downCount({
-    date: e(),
-    offset: -4
-  }, function () { });
+      return futureFormattedDate;
+    }
+    $('.countDown').downCount({
+      date: e(),
+      offset: -4
+    }, function () {
+      $(".closeTime").css("display", "none");
+      $(".closed").css("display", "block");
+      $(".bidReqestBtn").attr("disabled", "true")
+    });
 
 
 
-</script>
+  </script>
+  <!--Rating-->
+  <script>
+    $(".my-rating").starRating({
+      starSize: 16,
+      rtl: true,
+      activeColor: '#F9D674',
+      hoverColor: '#F9D674',
+      ratedColor: '#F9D674',
+      emptyColor: '#F3F3F3',
+      starShape: 'rounded',
+      ratedColors: 'F9D674',
+      useGradient: false,
+      disableAfterRate: false,
+
+      callback: function (currentRating, $el) {
+        // make a server call here
+
+      }
+    });
+
+    $(".readOnlyRating").starRating({
+      starSize: 16,
+      rtl: true,
+      activeColor: '#F9D674',
+      hoverColor: '#F9D674',
+      ratedColor: '#F9D674',
+      emptyColor: '#F3F3F3',
+      starShape: 'rounded',
+      ratedColors: 'F9D674',
+      useGradient: false,
+      readonly: true,
+      callback: function (currentRating, $el) {
+        // make a server call here
+      }
+    });
+  </script>
 
 </body>
 

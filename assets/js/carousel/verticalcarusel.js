@@ -3150,12 +3150,13 @@
 
 
 $("#gallery_01.owl-carousel").owlCarousel({
-	height:'450',
-    loop: true,
-    autoplay: true,
-    items: 5,
-    vertical:true,
+    loop: false,
+    autoplay: false,
+	vertical:true,
+	items:5,
+	margin:10,
     animateOut: 'slideOutUp',
-    animateIn: 'slideInUp',
+	animateIn: 'slideInUp',
+
 	
   });

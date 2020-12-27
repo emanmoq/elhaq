@@ -257,7 +257,7 @@ if ( typeof Object.create !== 'function' ) {
                 //create the div's                                                + ""
                 //self.zoomContainer = $('<div/>').addClass('zoomContainer').css({"position":"relative", "height":self.nzHeight, "width":self.nzWidth});
 
-                self.zoomContainer = $('<div class="zoomContainer" style="-webkit-transform: translateZ(0);position:absolute;left:'+self.nzOffset.left+'px;top:'+self.nzOffset.top+'px;height:'+self.nzHeight+'px;width:'+self.nzWidth+'px;"></div>');
+                self.zoomContainer = $('<div class="zoomContainer" style="-webkit-transform: translateZ(0);position:absolute;left:'+self.nzOffset.left +'px;top:'+self.nzOffset.top+'px;height:'+self.nzHeight+'px;width:'+self.nzWidth+'px;"></div>');
                 $('body').append(self.zoomContainer);   
 
 
@@ -638,9 +638,9 @@ if ( typeof Object.create !== 'function' ) {
                 }
 
                 //container fix
-                self.zoomContainer.css({ top: self.nzOffset.top});
-                self.zoomContainer.css({ left: self.nzOffset.left});
-                self.mouseLeft = parseInt(e.pageX - self.nzOffset.left);
+                self.zoomContainer.css({ top: self.nzOffset.top });
+                self.zoomContainer.css({ left: self.nzOffset.left-50});
+                self.mouseLeft = parseInt(e.pageX - self.nzOffset.left+50);
                 self.mouseTop = parseInt(e.pageY - self.nzOffset.top);
                 //calculate the Location of the Lens
 

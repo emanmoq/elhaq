@@ -24,34 +24,114 @@
 </head>
 
 <body class="SubfontColor">
+  <div class="bodyoverlay"></div>
   <!--Header Start-->
   <header class="bg-white">
     <!--Start Top Header-->
     <div class="topHeader">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <div class="d-lg-none d-md-none d-block col-4">
+            <!--Mobile Navbar-->
+            <div class="mobileMenu">
+              <nav class="navbar navbar-expand-lg ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="close"><i class="lni lni-close"></i></div>
+                  <div class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">الرئيسية </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">عن الموقع </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">الصفقات </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">المزادات </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">اتصل بنا </a>
+                    </li>
+                  </div>
+                  <div class="categMenu mobileCategMenu">
+                    <div class="dropdown categBtn">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-expanded="false">
+                        التصنيفات
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li>
+                          <form action="" class="categSearch"><input type="text" class="form-control" placeholder="بحث">
+                            <button class="searchIcon" type="submit"><i class="fas fa-search"></i></button>
+                          </form>
+                        </li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/1.png" alt=""></div>ألكل
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/1.png" alt=""></div>ملابس
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/gift.png" alt=""></div>هدايا
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/3.png" alt=""></div>عطور
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/4.png" alt=""></div>أحذية
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/44.png" alt=""></div>ألعاب
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/5.png" alt=""></div>هواتف
+                          </a></li>
+                        <li><a class="dropdown-item" href="#">
+                            <div class="dropDownImg"><img src="assets/images/6.png" alt=""></div>أثاث
+                          </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="langugeMobile">
+                    <a href="">اللغة الانجليزية</a>
+                  </div>
+                  <div class="loginMobile">
+                    <a href=""> تسجيل الدخول</a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <button class="searchIcon MobilesearchIcon" type="submit"><i class="fas fa-search"></i></button>
+
+          </div>
+          <div class="col-lg-2 col-md-4 col-4">
             <a href="index.html" class="logo">
               <img src="assets/images/logo.png" alt="">
             </a>
           </div>
-          <div class="col-md-6">
-            <div class="search ">
+          <div class=" col-lg-6 col-md-12  order-lg-2 order-md-3  d-lg-block d-md-block d-none">
+            <div class="search clearfix">
               <form>
                 <div class="form-group">
                   <input type="text" placeholder="ابحث هنا" class="form-control searchFormControl">
-                  <div class="searchIcon">
-                    <img src="assets/images/Icons/search.png" alt="">
-                  </div>
+                  <button class="searchIcon" type="submit"><i class="fas fa-search"></i></button>
+
                 </div>
                 <button class="btn searchBtn MainBGColor whiteColor"> بحث متقدم</button>
               </form>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4 col-md-8 col-4 order-lg-3 order-md-2 order-3">
             <div class="profileSection">
-              <div class="profile">
-                <a href="#">
+              <div class="profile d-lg-inline-block d-md-inline-block d-none">
+                <a href="login.html">
                   <div class="profileIcon">
                     <img src="assets/images/Icons/profile.png" alt="">
                   </div>
@@ -59,7 +139,7 @@
                 </a>
               </div>
               <div class="profile">
-                <a href="#">
+                <a href="#" class="notify">
                   <div class="profileIcon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                       <g fill="none" fill-rule="evenodd">
@@ -73,7 +153,7 @@
                 </a>
               </div>
               <div class="profile">
-                <a href="#">
+                <a href="#" class="notify">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <g fill="none" fill-rule="evenodd">
                       <rect width="24" height="24" />
@@ -87,10 +167,20 @@
           </div>
         </div>
       </div>
+      <div class="search mobileSearchSection d-lg-none d-md-none">
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="ابحث هنا" class="form-control searchFormControl">
+            <button class="searchIcon" type="submit"><i class="fas fa-search"></i></button>
+
+          </div>
+          <button class="btn searchBtn mainfontColor mobilesearchBtn"> بحث متقدم</button>
+        </form>
+      </div>
     </div>
     <!--End Top Header-->
     <!--Start Menu-->
-    <div class="menu">
+    <div class="menu d-lg-block  d-md-block d-none">
       <div class="container">
         <div class="row">
           <div class="col-md-12 clearfix">
@@ -101,6 +191,14 @@
                   <i class="fas fa-list"></i>التصنيفات
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li>
+                    <form action="" class="categSearch"><input type="text" class="form-control" placeholder="بحث">
+                      <button class="searchIcon" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                  </li>
+                  <li><a class="dropdown-item" href="#">
+                      <div class="dropDownImg"><img src="assets/images/1.png" alt=""></div>ألكل
+                    </a></li>
                   <li><a class="dropdown-item" href="#">
                       <div class="dropDownImg"><img src="assets/images/1.png" alt=""></div>ملابس
                     </a></li>
@@ -165,7 +263,7 @@
               </a>
               <!--Languge-->
               <a href="#" class="languge">
-                <div class="icon"><img src="assets/images/Icons/En.png" alt=""></div>
+                <div class="icon"><img src="assets/images/global.png" alt=""></div>
                 <span>
                   English
                 </span>
@@ -177,72 +275,128 @@
     </div>
     <!--End Menu-->
   </header>
-  <!--Header End-->
   <!--Login Section Start-->
   <section class="loginSection">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-md-6">
-                  <form class="loginBox bg-white clearfix">
-                      <div class="loginImg">
-                          <img src="assets/images/001.png" alt="">
-                      </div>
-                      <h4 class="SubfontColor">تسجيل دخـــول</h4>
-                      <span class="error">* خطأ بالبريد الالكتروني أو كلمة المرور</span>
-                      <div class="form-group">
-                        <i class="lni lni-envelope"></i>
-                          <input type="email" placeholder="البريد الالكتروني" class="form-control" >
-                      </div>
-                      <div class="form-group">
-                        <i class="lni lni-lock"></i>
-                          <input type="password" placeholder="كلمة المرور" class="form-control" >
-                      </div>
-                      <a href="#" class="mainfontColor forgetpass">  نسيت كلمة المرور</a>
-                      <button class="loginBtn MainBGColor whiteColor btn">تسجيل دخــول</button>
-                      <div class="regLink SubfontColor">لا تملك حسابا بالفعل <a href="#" class="mainfontColor">تسجيل</a></div>
-                     
-                  </form>
-              </div>
-          </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <form class="loginBox bg-white clearfix">
+            <div class="loginImg">
+              <img src="assets/images/001.png" alt="">
+            </div>
+            <h4 class="SubfontColor">تسجيل دخـــول</h4>
+            <span class="error">* خطأ بالبريد الالكتروني أو كلمة المرور</span>
+            <div class="form-group">
+              <label for="">البريد الالكتروني</label>
+              <i class="lni lni-envelope"></i>
+              <input type="email" class="form-control">
+
+            </div>
+            <div class="form-group">
+              <label for=""> كلمة المرور</label>
+              <i class="lni lni-lock"></i>
+              <input type="password" class="form-control">
+            </div>
+            <a href="#" class="mainfontColor forgetpass"> نسيت كلمة المرور</a>
+            <button class="loginBtn MainBGColor whiteColor btn">تسجيل دخــول</button>
+            <div class="regLink SubfontColor">لا تملك حسابا بالفعل <a href="#" class="mainfontColor">تسجيل</a></div>
+
+          </form>
+        </div>
       </div>
+    </div>
   </section>
-    <!--Login Section Start-->
- 
+  <!--Login Section Start-->
   <!--Footer-->
   <footer class="SubBGColor footer">
- <!--Subscribe start-->
- <section class="subscribe ">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="subscribeBox clearfix">
-          <h5 class="whiteColor"> اشترك معنا في النشرة البريدية</h5>
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="أدخل البريد الالكتروني">
+    <!--Subscribe start-->
+    <section class="subscribe ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="subscribeBox clearfix">
+              <h5 class="whiteColor"> اشترك معنا في النشرة البريدية</h5>
+              <form class="clearfix">
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="أدخل البريد الالكتروني">
+                </div>
+                <button class="sendSubscribe btn whiteColor" type="submit"> ارسال</button>
+                <ul class="socialIcons">
+                  <li>
+                    <a href="" class="whiteColor"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="" class="whiteColor"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="" class="whiteColor"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </form>
+
             </div>
-            <button class="sendSubscribe btn whiteColor" type="submit"> ارسال</button>
-          </form>
-          <ul class="socialIcons">
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--subscribe End-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-12">
+          <h5 class="footerTitle">نبذة عنا</h5>
+          <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
+            تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+          </p>
+        </div>
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-2 col-md-6  col-12">
+          <h5 class="footerTitle"> روابط</h5>
+          <ul class="footerList">
             <li>
-              <a href="" class="whiteColor"><i class="fab fa-facebook-f"></i></a>
+              <a href="#">وظائف
+              </a>
             </li>
             <li>
-              <a href="" class="whiteColor"><i class="fab fa-twitter"></i></a>
+              <a href="#">المساعدة
+              </a>
             </li>
             <li>
-              <a href="" class="whiteColor"><i class="fab fa-instagram"></i></a>
+              <a href="#">الشحن والتوصيل
+              </a>
+            </li>
+            <li>
+              <a href="#"> التبديل و الإرجاع
+              </a>
             </li>
           </ul>
         </div>
 
-
+        <div class="col-lg-5 col-md-6  col-12">
+          <h5 class="footerTitle"> التطبيق</h5>
+          <p class="appText">للحصول على أفضل تجربة تسوق
+            يرجى تنزيل التطبيق الخاص بنا</p>
+          <div class="maindownloadApp">
+            <div class="appImg">
+              <a href=""> <img src="assets/images/app.png" alt=""></a>
+            </div>
+            <div class="appImg">
+              <a href=""><img src="assets/images/google.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="mainCopyrights whiteColor text-center">
+            جميع الحقوق محفوظة موقع إلحق © 2020
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
- <!--subscribe End-->
-    <div class="container">
+    <!--
+      <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="copyRight whiteColor">
@@ -261,9 +415,9 @@
         </div>
       </div>
     </div>
+-->
   </footer>
   <!--footer End-->
-
   <!--The js files -->
   <script type="text/javascript" src="assets/js/countDown/jquery1.js"></script>
   <script src="assets/js/countDown/waypoints-min.js"></script>
@@ -276,40 +430,56 @@
   <script src="assets/lib/Progress/circlos.js"></script>
   <script src="assets/lib/countDown/multi-countdown.js"></script>
 
-<!--circular progress script-->
-<script>
-  $(document).ready(function () {
-    // init
-    $(".cdev").circlos();
+  <!--circular progress script-->
+  <script>
+    $(document).ready(function () {
+      // init
+      $(".cdev").circlos();
 
 
-  });
-</script>
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".loginBox input").on("input", function () {
+        if ($(this).val() != "") {
+          $(this).parent().find("label").css("top", "5px");
+          $(this).parent().find("label").css("font-size", "12px")
+        }
+        else {
+          $(this).parent().find("label").css("top", "30%");
+          $(this).parent().find("label").css("font-size", "14px")
+
+        }
+
+      });
+    });
+  </script>
   <script type="text/javascript" src="assets/js/main.js"></script>
 
   <script type="text/javascript" src="assets/js/countDown/downcounter.js"></script>
-<!--Countdown sript-->
-<script>
-  function e() {
-    var e = new Date;
-    e.setDate(e.getDate() + 60);
+  <!--Countdown sript-->
+  <script>
+    function e() {
+      var e = new Date;
+      e.setDate(e.getDate() + 60);
 
-    var dd = e.getDate();
-    var mm = e.getMonth() + 1;
-    var y = e.getFullYear();
+      var dd = e.getDate();
+      var mm = e.getMonth() + 1;
+      var y = e.getFullYear();
 
-    var futureFormattedDate = mm + "/" + dd + "/" + y + ' 12:00:00';
+      var futureFormattedDate = mm + "/" + dd + "/" + y + ' 12:00:00';
 
-    return futureFormattedDate;
-  }
-  $('.countDown').downCount({
-    date: e(),
-    offset: -4
-  }, function () { });
+      return futureFormattedDate;
+    }
+    $('.countDown').downCount({
+      date: e(),
+      offset: -4
+    }, function () { });
 
 
 
-</script>
+  </script>
 
 </body>
 
