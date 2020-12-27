@@ -1126,12 +1126,14 @@
                                     </label>
                                     <h3> المرفقات</h3>
                                     <label for="uploadfile" class="uploadImage">
-                                        <img src="" alt="" style="display: none;">
+                                        <img src="" alt="" style="display: none;" >
                                         <div class="inputText">
                                             <i class="fas fa-image"></i>
                                             <span>إسحب و أفلت</span>
                                         </div>
-                                        <input type="file" id="uploadfile" onchange="readURL(this)">
+                                        <input type="file" id="uploadfile" onchange="readURL(this)" multiple  accept="image/gif, image/jpeg ,application/pdf"
+                                        
+                                        >
                                     </label>
                                     <script>
                                         function readURL(input) {
@@ -1140,8 +1142,11 @@
                                                 var reader = new FileReader();
                                                 reader.onload = function (e) {
                                                     $($input).parent().find("img")
-                                                        .attr('src', e.target.result).css("display", "block");
-                                                    $(".inputText").css("display", "none")
+                                                        .attr({
+                                                            'src': e.target.result,
+                                                            'data-image':e.target.result}).css("display", "block");
+                                                    $(".inputText").css("display", "none");
+                                                    
                                                 };
                                                 reader.readAsDataURL(input.files[0]);
                                             }
@@ -1157,6 +1162,8 @@
                                     <textarea name="" class='form-control'></textarea>
                                     <button class="searchBtn MainBGColor whiteColor saveAddressBtn btn" type="submit">
                                         إرســال</button>
+                                        <button class="searchBtn MainBGColor whiteColor saveAddressBtn back btn" type="submit">
+                                            رجوع</button>
 
                                 </form>
                             </div>

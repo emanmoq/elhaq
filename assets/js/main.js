@@ -47,16 +47,17 @@ jQuery(function ($) {
     }
 
   });
-  if ($(window).width() < 767) {
+      if ($(window).width() < 767) {
 
-    $(".clientinfo").click(function () {
-      $("#v-pills-tab").toggle();
-    });
-    $("#v-pills-tab .nav-link").click(function () {
-      $("#v-pills-tab").toggle();
-    });
+      $(".clientinfo").click(function () {
+        alert(vcvd);
+        $("#v-pills-tab").toggle();
+      });
+      $("#v-pills-tab .nav-link").click(function () {
+        $("#v-pills-tab").toggle();
+      });
 
-  }
+    }
 
 
 
@@ -138,4 +139,5 @@ $(".attachments .close").click(function(){
 $("#notificationDropDown").click(function(){
   $(".notfyDropDown ").toggle();
 })
+$("body").click(function(){$(".notfyDropDown").css("display","none")});
 });

@@ -8,13 +8,17 @@
     font-family:"Tajawal-bold";
     src:url("../fonts/Arabic/Tajawal/Tajawal-Bold.ttf");
 }
+body::-webkit-scrollbar::first-line{
+    display: none;
+}
 html{
     -webkit-user-select: none;
 	-webkit-user-drag: none;
 	-webkit-app-region: no-drag;
     cursor: default;
     min-height: 100%;;
-    overflow-y: scroll;
+    overflow-y:hidden
+    
 }
 img{
     width:100%;
@@ -43,13 +47,14 @@ a:hover{
 body{
     box-sizing: border-box;
     position: relative;
-    overflow-x: hidden;
     direction: rtl;
     text-align: right;
     font-size:14px;
     font-family:"Tajawal-Regular";
     height: 100%;
     min-height: 100%;
+    overflow-x: hidden;
+   
 }
 
 .search{
@@ -73,7 +78,7 @@ header .container{
     left: 0;
     width:100%;
     right:0;
-    transition: all .5s;;
+    transition: all .2s;;
     animation:sticky;
 }
 .searchFormControl::placeholder{
@@ -142,7 +147,7 @@ float:right;
 }
 .navbar.navbar-expand-lg{
 float:right;
-transition: all .5s;
+transition: all .2s;
 }
 .navbar-expand-lg .navbar-nav .nav-link{
     font-size:14px;
@@ -311,7 +316,7 @@ border-radius: 50%;;
 .categItem{
     padding:10px 7px;;
     border-radius: 5px;;
-    transition: all .5s;;
+    transition: all .2s;;
     height:70px;
     overflow: hidden;
     display: flex;
@@ -331,7 +336,7 @@ border-radius: 50%;;
     float:right;
     margin-right: 8px;
     font-size: 20px;
-    transition: all .5s;; 
+    transition: all .2s;; 
 }
 h4.smallFont{
     font-size:9px;
@@ -343,7 +348,7 @@ h4.smallFont{
 }
 
 .categItem:hover img{
-    transition: all .5s;
+    transition: all .2s;
     filter: invert(1);
 }
 .categories{
@@ -417,13 +422,13 @@ justify-content: center;
     margin:0;
 }
 .tabsBox{
-    padding:20px;
+    padding:18px;
     margin-bottom: 15px;
     height: 290px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,.2);
 }
+
 .tabsBox:hover{
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
 }
@@ -443,10 +448,10 @@ justify-content: center;
 }
 .productImg:hover img{
 transform: scale(1.1);
-transition: all .5s;
+transition: all .2s;
 }
 .productImg img{
-    transition: all .5s;
+    transition: all .2s;
     height: 100%;
     width: auto;
     margin: auto;
@@ -641,7 +646,7 @@ line-height: 60px;;
     right:12px;
     top:-15px;
     display: none;
-    transition: all .5s;
+    transition: all .2s;
 }
 .categBtn .btn {
   float: right; 
@@ -784,6 +789,7 @@ font-family:"Tajawal-bold";
 }
 .loginSection{
     padding:35px 0;
+    margin-bottom: 100px;
 }
 .loginBox{
     border-radius: 10px;
@@ -851,11 +857,11 @@ margin-bottom: 20px;;
     border-radius: 10px;;
 }
 .loginBtn{
-transition: all .5s;;
+transition: all .2s;;
 height:50px;
 }
 .loginBtn:hover{
-    transition: all .5s;;
+    transition: all .2s;;
 }
 .regLink{
     margin-top:17px;
@@ -1075,7 +1081,7 @@ border-bottom:1px solid rgba(190, 190, 190, .5);
 padding-top:13px;
 padding-left:20px;
 padding-right:20px;
-transition: all .5s;;
+transition: all .2s;;
 }
 .biddersMenu p{
 margin:0;
@@ -1400,8 +1406,7 @@ margin-bottom:36px;
 
 }
 .emptyCart{
-    text-align: center;
-}
+    text-align: center;}
 .emptyCart h4{
     font-size:36px;
     margin-bottom:13px;
@@ -1553,7 +1558,7 @@ font-size: 14px;;
     margin-bottom:6px;
     padding-bottom: 30px;
     display: none;
-    transition: all .5s;;
+    transition: all .2s;;
 }
 .payOptions h4{
 font-size: 16px;
@@ -2155,6 +2160,14 @@ table.dataTable.no-footer{
     cursor: pointer;
     overflow: hidden;
 }
+.uploadImage img{
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+.back{
+    float:left
+}
 .inputText{
     align-self: center;
 }
@@ -2232,7 +2245,7 @@ textarea.form-control{
     padding:40px 0;
 }
 .searchPageForm {
-    padding:0;
+    padding:15px;
     text-align: right;
     padding-bottom:40px}
     .searchPageForm .form-group{
@@ -2294,8 +2307,9 @@ textarea.form-control{
         width:100%
     }
     .searchResult{
-        padding-top:40px;
-
+        margin:30px 0;
+        background-color: white;
+        padding:15px;
     }
     .searchResult h5{
         font-size: 16px;;
@@ -2308,6 +2322,12 @@ textarea.form-control{
     }
     /***** mobile screen ****/
 @media(max-width:767px){
+    .loginSection{
+        margin-bottom: 30px;
+    }
+    .checkcode{
+        width:73%;
+    }
     .myReqNumbers{
         margin-bottom:10px;
     }
@@ -2345,7 +2365,7 @@ textarea.form-control{
         width: 100%;;
     }
 .controlPanel{
-    padding-top:111px;
+    padding-top:50px;
 }
 .reqIcon{
     left:41%;
