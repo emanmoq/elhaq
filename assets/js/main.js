@@ -2,13 +2,15 @@ jQuery(function ($) {
   $(window).scroll(function () {
 
     scrollTop = $(window).scrollTop();
+
      if (scrollTop > $('header').height()) {
 
       $('header').addClass('scrollNav');
     }
-    else{
+    else{ 
       $('header').removeClass('scrollNav');
     }
+  
 
      if ($(window).width() < 1024 && $(window).width() > 767) {
       if (scrollTop > $(".categories").height()) {
@@ -44,13 +46,23 @@ jQuery(function ($) {
         $(".categBtn").css("display", "none");
         $(".navbar.navbar-expand-lg").css("margin-right", "0");
       }
+      
     }
 
+    if (scrollTop -200  > 0) {
+      $('.up').stop().animate({
+        opacity: 1
+      }, 100);// show the button
+  } else {
+      $('.up').stop().animate({
+        opacity: 0
+      }, 250);// hide the button
+  }
   });
+
       if ($(window).width() < 767) {
 
       $(".clientinfo").click(function () {
-        alert(vcvd);
         $("#v-pills-tab").toggle();
       });
       $("#v-pills-tab .nav-link").click(function () {
@@ -59,12 +71,6 @@ jQuery(function ($) {
 
     }
 
-
-
-
-
-
-
   $('.heroSlider').owlCarousel({
     nav: true,
     loop: true,
@@ -93,7 +99,23 @@ jQuery(function ($) {
 
     }
   });
-  
+  $('.categSlider').owlCarousel({
+    nav: true,
+    loop: true,
+    dots: false,
+    items:6,
+    margin:15,
+    rtl:true,
+    navText: ['<i class="lni lni-arrow-right"></i>', '<i class="lni lni-arrow-left"></i>'],
+    responsive:{
+      0:{
+        items:3
+      },
+      600:{
+        items:5
+      }
+    }
+  });
 
   $(".navbar-toggler").click(function () {
     $(".navbar-collapse").collapse("show");
@@ -108,7 +130,7 @@ jQuery(function ($) {
   });
   $('.bodyoverlay').click(function () {
     $(".navbar-collapse").collapse("hide");
-    $("bodyoverlay").css("display", "none");
+    $(".bodyoverlay").css("display", "none");
     $('.mobileSearchSection').css("display", "none");
   });
   $(".MobilesearchIcon").click(function () {

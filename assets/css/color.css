@@ -508,3 +508,26 @@ table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.st
     .profile  .dropdownTitle svg path{
         color:#F27835 !important
     }
+    .file-footer-buttons button i{
+        color:#E15F38
+    }
+     .btn-kv i{
+        color:#E15F38
+    }
+    .btn-kv.btn-outline-secondary:hover {
+        background-color: #E15F38 !important;
+      
+    }
+    .btn-kv.btn-outline-secondary:hover i{
+        color:white  !important;
+    }
+    .file-zoom-dialog .btn-navigate{
+        color:#E15F38 !important;
+    }
+    .up i{
+
+        color: #fff;
+        background: #E15F38;
+        box-shadow: 0 0 5px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    }
+    

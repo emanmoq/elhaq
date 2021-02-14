@@ -8,17 +8,16 @@
     font-family:"Tajawal-bold";
     src:url("../fonts/Arabic/Tajawal/Tajawal-Bold.ttf");
 }
-body::-webkit-scrollbar::first-line{
-    display: none;
-}
+
+
 html{
     -webkit-user-select: none;
 	-webkit-user-drag: none;
 	-webkit-app-region: no-drag;
     cursor: default;
-    min-height: 100%;;
-    overflow-y:hidden
-    
+    min-height: 100%;
+    height:100%;
+    overflow-x: hidden;
 }
 img{
     width:100%;
@@ -51,8 +50,6 @@ body{
     text-align: right;
     font-size:14px;
     font-family:"Tajawal-Regular";
-    height: 100%;
-    min-height: 100%;
     overflow-x: hidden;
    
 }
@@ -71,7 +68,6 @@ header .container{
 .scrollNav{
     top: 0 !important;
     z-index: 99999999999999999999999;
-    animation-duration: .5s;
     position: fixed !important;
     box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
     transition: 1s all;
@@ -112,16 +108,14 @@ float:right;
 .notify{
     position: relative;
 }
-.notify:before{
+.notify .notificationNum{
     content:"";
     position: absolute;
-    background-color: #E11841;
-    width:5px;
-    height:5px;
-    border-radius: 5px;
-    left:-4px;
-    top:0;
-    
+    color: #E11841;
+font-weight: bold;
+left: -6px;
+font-size: 13px;
+top: -18px;
     animation: pulse .5s infinite;
 }
 
@@ -314,7 +308,7 @@ border-radius: 50%;;
     outline: 0;
 }
 .categItem{
-    padding:10px 7px;;
+    padding:10px 19px;;
     border-radius: 5px;;
     transition: all .2s;;
     height:70px;
@@ -323,7 +317,7 @@ border-radius: 50%;;
 }
 .categImage{
     float: right;
-    max-width:50px;
+    max-width:32px;
     max-height: 50px;
     align-self: center;
 }
@@ -382,6 +376,9 @@ h4.smallFont{
     width:13.2%;
     display: inline-block;
     margin-left:10px;
+}
+.categSlider .owl-nav button i, .categSlider2 .owl-nav button i{
+    font-size: 18px;
 }
 .categSlider2 .owl-item.active .categItem:last-child{
     margin-left:0;
@@ -545,7 +542,7 @@ margin:0;
     bottom:-9px;
     position: absolute;
     animation: MoveUpDown 1s linear infinite;
-    left:50%;
+    left:49.5%;
 }
 
 @keyframes MoveUpDown {
@@ -562,6 +559,10 @@ margin:0;
     overflow: hidden;
     margin-top:73px;
     margin-bottom:50px;
+}
+.adsBox img{
+    object-fit: cover;
+    width: auto;
 }
 .adsBox .adsText{
     position: absolute;
@@ -1148,10 +1149,7 @@ height:400px !important
 #gallery_02{
     display: none !important;
 }
-.zoomLens{
-    width:100px !important;
-    height:100px !important
-}
+
 
 #gallery_01 .owl-item {
     display: block;
@@ -1187,6 +1185,12 @@ opacity: .5;
     width: 45px;
     text-align: center;
     border-radius: 4px 0px 0px 4px;
+}
+.cartAddintion .qty-plus-minus .form-control:first-child{
+    border-radius: 4px 0px 0px 0px;
+}
+.cartAddintion .qty-plus-minus .form-control:last-child{
+    border-radius: 0px 0px 0px 4px;
 }
 .btnminus span, .btnplus span {
     position: unset;
@@ -1255,6 +1259,11 @@ border-radius: 0;
 
 .comment textarea.form-control{
     width:100%;
+    height:170px;
+    resize: none;
+    margin-bottom: 17px;;
+}
+textarea.form-control.contactTextArea{
     height:170px;
     resize: none;
     margin-bottom: 17px;;
@@ -1479,7 +1488,7 @@ padding-top:19px;
 .cartAddintion .qty-plus-minus .form-control{
 width:100%;
 display: block;
-height:33.3%;
+height:33.3333333%;
 }
 
 .cartAddintion .qty-plus-minus{
@@ -2149,21 +2158,73 @@ table.dataTable.no-footer{
     position: absolute;
   opacity: 0;
 }
-.uploadImage{
+.uploadImage,.file-preview{
+    border:0;
     width:100%;
-    height:100px;
+    min-height: 100px;
     background-color: #FCFCFC;
     margin-top:48px;
     border-radius: 10px;;
     display: flex;
     justify-content: center;
     cursor: pointer;
-    overflow: hidden;
+    padding:0;
+
+}
+.kv-rtl .kv-zoom-actions .btn-kv{
+    padding:10px;
+}
+#kvFileinputModal {
+    left:-250px;
+    border-radius: 10px;
+}
+.file-drop-zone-title{
+    padding: 68px 10px;
 }
 .uploadImage img{
     height: auto;
     width: auto;
     object-fit: contain;
+}
+.kv-preview-data.file-preview-other-frame{
+    width:auto !important;
+    height: auto !important;
+}
+.kv-rtl .krajee-default.file-preview-frame:not(.file-preview-error):hover,.file-preview-frame.krajee-default.kv-preview-thumb{
+    box-shadow: none;;
+}
+#kvFileinputModalLabel{
+    display: none;
+}
+.krajee-default.file-preview-frame .kv-file-content {
+    width: 168px;
+    height: 100px;
+    margin-bottom:5px;
+    overflow-y: hidden;
+}
+.krajee-default.file-preview-frame .file-thumbnail-footer{
+    height:auto
+}
+.btn-file{
+    display: none !important;
+}
+.krajee-default .file-footer-caption{
+    display: none;
+}
+.fileinput-remove{
+    display: none !important;
+}
+.file-drop-zone {
+     border:0;
+    min-height: 100px;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    margin:0 ;
+ padding: 0px;
+width:100%;}
+.fileinput-upload-button{
+    height:39px !important;
 }
 .back{
     float:left
@@ -2320,13 +2381,85 @@ textarea.form-control{
   .table.dataTable{
     margin-bottom:26px !important;
     }
+    .title{
+        font-size:35px;
+        margin-bottom:30px;
+    }
+    .about{
+        padding:40px 0;
+    }
+    .puplicText{
+        font-size: 14px;
+        line-height: 2.5;
+    }
+  .contatcForm{
+      text-align: right;
+  }
+  .up{
+    display: inline;
+    position: fixed;
+    bottom: 18px;
+    right: 15px;
+    text-decoration: none;
+    text-align: center;
+    z-index: 999;
+    opacity: 0
+
+
+}
+.up:hover{
+    text-decoration: none;
+}
+.up i{
+    display: block;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: black;
+
+}
+.up:hover i{
+background-color: #F27835;
+}
+.dataTables_wrapper .dataTables_paginate{
+    padding-top:0;
+}
+
     /***** mobile screen ****/
 @media(max-width:767px){
+    #kvFileinputModal{
+        width:100%;
+        left:5px;
+    }
+    
+.btn{
+    line-height: 15px;
+}
+    .checkcode .form-group:last-child{
+        margin-right: 0 ;
+    }
+    #kvFileinputModal.modal .modal-header{
+height:auto;
+padding:5px;
+line-height: 25px;;
+    }
+    .uploadImage,.file-preview{
+
+        overflow-y: scroll;
+    
+    }
+  .comment .sendComment{
+      width:100%;
+      margin-right:0;
+  }
+  
     .loginSection{
         margin-bottom: 30px;
     }
     .checkcode{
-        width:73%;
+        width:75%;
     }
     .myReqNumbers{
         margin-bottom:10px;
@@ -2775,7 +2908,7 @@ right:0;
             cursor: pointer;
         }
         #v-pills-tabContent{
-            padding:10px;
+            padding:0;
         }
         .navTabIcon{
             width:28px;
@@ -2887,7 +3020,7 @@ footer{
         font-size: 18px;
     }
     .productImg{
-        width: 125px;
+        width: 164px;
         height: 85px;
     }
     .productDetails{
@@ -3008,6 +3141,16 @@ width:auto
 }
 /**** tablets screen ******/
 @media(min-width:767px) and (max-width:1023px){
+    .uploadImage,.file-preview{
+
+        overflow-y: scroll;
+    
+    }
+    .controlFooter{
+        position: relative;
+        bottom: -44px;
+    }
+    
     .reqIcon{
         left:37%;
     }
@@ -3138,9 +3281,7 @@ image {
 #gallery_01 {
     width: 11%;
 margin-left:20px;}
-.image{
-    width:70%
-}
+
 .accounttabsSection {
     padding: 25px 7px}
     #v-pills-tab .nav-link {
@@ -3164,6 +3305,8 @@ margin-left:20px;}
 
 }
 @media (min-width:1024px) and (max-width:1200px){
+    
+  
     .loginSection .col-lg-6.col-md-8,.loginSection .col-lg-6.col-md-10{
         flex: 0 0 70.333333%;
         max-width: 70.333333%;
@@ -3246,12 +3389,13 @@ margin-left:20px;}
                   font-size:12px;
               }
               .adsBox{
-                  margin:14px 0;
-                  height:70px;
+                  margin:20px 0;
+                  height:200px;
+                  margin-bottom: 70px;;
               }
             
               .adsText h3{
-                  font-size: 13px;;
+                  font-size: 30px;;
               }
               .subscribeBox{
                   height:auto;
@@ -3261,7 +3405,7 @@ margin-left:20px;}
                   margin-bottom:16px
               }
               .subscribeBox form{
-                  display: block;
+                  display: flex;
                   float:none
               }
               .subscribeBox .form-group {
@@ -3304,5 +3448,26 @@ margin-left:20px;}
                 .maindownloadApp .appImg {
                     width: 175px;
                 }
+                .about {
+                    padding: 97px 0;
+                }
+    footer{
+        position: relative;
+        bottom:-17%;
+    }
+    footer.controlFooter{
+        bottom:-37%;
+    }
+}
+@media(min-width:1380px){
+   .controlFooter {
+        position: relative;
+        bottom: -38%;
+    }
+    .footer{
+        position: relative;
+        bottom: -13%;
+    }
+     
 }
 

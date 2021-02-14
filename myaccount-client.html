@@ -22,6 +22,9 @@
     <link href="assets/lib/Progress/style.css" rel="stylesheet">
     <link href="assets/lib/fancyBox/fancy.min.css" rel="stylesheet">
     <link href="assets/lib/dataTable/datatables.min.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap-fileinput-master/css/fileinput.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap-fileinput-master/css/fileinput-rtl.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap-fileinput-master/themes/explorer-fas/theme.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -211,42 +214,45 @@
                                 </a>
                                 <ul class="dropdown-menu notfyDropDown clearfix" aria-labelledby="notificationDropDown">
                                     <div class="dropdownTitle">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <g fill="none" fill-rule="evenodd">
-                                          <rect width="24" height="24" />
-                                          <path fill="#222" fill-rule="nonzero"
-                                            d="M6,16 L18,16 L18,12 C18,8.6862915 15.3137085,6 12,6 C8.6862915,6 6,8.6862915 6,12 L6,16 Z M13,4.06189375 C16.9463116,4.55399184 20,7.92038235 20,12 L20,18 L4,18 L4,12 C4,7.92038235 7.05368842,4.55399184 11,4.06189375 L11,3 C11,2.44771525 11.4477153,2 12,2 C12.5522847,2 13,2.44771525 13,3 L13,4.06189375 Z M10,19 L14,19 C14,20.1045695 13.1045695,21 12,21 C10.8954305,21 10,20.1045695 10,19 Z" />
-                                        </g>
-                                      </svg>
-                                      التنبيهات
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <rect width="24" height="24" />
+                                                <path fill="#222" fill-rule="nonzero"
+                                                    d="M6,16 L18,16 L18,12 C18,8.6862915 15.3137085,6 12,6 C8.6862915,6 6,8.6862915 6,12 L6,16 Z M13,4.06189375 C16.9463116,4.55399184 20,7.92038235 20,12 L20,18 L4,18 L4,12 C4,7.92038235 7.05368842,4.55399184 11,4.06189375 L11,3 C11,2.44771525 11.4477153,2 12,2 C12.5522847,2 13,2.44771525 13,3 L13,4.06189375 Z M10,19 L14,19 C14,20.1045695 13.1045695,21 12,21 C10.8954305,21 10,20.1045695 10,19 Z" />
+                                            </g>
+                                        </svg>
+                                        التنبيهات
                                     </div>
                                     <div class="close"><i class="lni lni-close"></i></div>
                                     <li class="clearfix">
-                                      <a class="dropdown-item" href="#">
-                                        <div class="fromMin mainfontColor">منذ 1 دقائق</div>
-                                        <h6 class="SubfontColor">شكرا لشرائك من متجرنا</h6>
-                                        <div class="productNotification"></div>
-                                      </a>
-                                      <p class="SubfontColor">نتمنى أن تكون قد استمتعت معنا في عملية الشراء من متجرنا فضلاً قم بتقييم
-                                        المنتج
-                                        <a href="#" class="mainfontColor clickHere">من هنا</a>
-                                      </p>
-                  
+                                        <a class="dropdown-item" href="#">
+                                            <div class="fromMin mainfontColor">منذ 1 دقائق</div>
+                                            <h6 class="SubfontColor">شكرا لشرائك من متجرنا</h6>
+                                            <div class="productNotification"></div>
+                                        </a>
+                                        <p class="SubfontColor">نتمنى أن تكون قد استمتعت معنا في عملية الشراء من متجرنا
+                                            فضلاً قم بتقييم
+                                            المنتج
+                                            <a href="#" class="mainfontColor clickHere">من هنا</a>
+                                        </p>
+
                                     </li>
                                     <li class="clearfix">
-                                      <a class="dropdown-item" href="#">
-                                        <div class="fromMin mainfontColor">منذ 1 دقائق</div>
-                                        <h6 class="SubfontColor">شكرا لشرائك من متجرنا</h6>
-                                        <div class="productNotification"></div>
-                                      </a>
-                                      <p class="SubfontColor">نتمنى أن تكون قد استمتعت معنا في عملية الشراء من متجرنا فضلاً قم بتقييم
-                                        المنتج
-                                        <a href="#" class="mainfontColor clickHere">من هنا</a>
-                                      </p>
-                  
+                                        <a class="dropdown-item" href="#">
+                                            <div class="fromMin mainfontColor">منذ 1 دقائق</div>
+                                            <h6 class="SubfontColor">شكرا لشرائك من متجرنا</h6>
+                                            <div class="productNotification"></div>
+                                        </a>
+                                        <p class="SubfontColor">نتمنى أن تكون قد استمتعت معنا في عملية الشراء من متجرنا
+                                            فضلاً قم بتقييم
+                                            المنتج
+                                            <a href="#" class="mainfontColor clickHere">من هنا</a>
+                                        </p>
+
                                     </li>
-                                  </ul>
-                  
+                                </ul>
+
                             </div>
                             <div class="profile">
                                 <a href="#" class="notify">
@@ -487,6 +493,22 @@
                                 <a href="#" class=" SubfontColor addNewAddress"><i class="fas fa-plus"></i>
                                     <h6>أنشيء عنوانا جديدا</h6>
                                 </a>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="addNewAddressTab" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <div class="navTabHeader clearfix">
+                                <div class="navTabIcon">
+                                    <img src="assets/images/shipping.png" alt="">
+                                </div>
+                                <h4>عنوان <span class="mainfontColor">الشحن</span></h4>
+                                <a href="#" class="float-left mainfontColor shippingBack"><i class="fas fa-arrow-left"></i></a>
+
+
+                            </div>
+                            <div class="navBody">
+
                                 <form class="loginBox  clearfix UserProfileForm AddAdressForm">
                                     <div class="form-group">
                                         <label for=""> اسم المحافظة</label>
@@ -521,7 +543,7 @@
                             </div>
 
                         </div>
-                        <div class="tab-pane fade requestTab " id="v-pills-messages" role="tabpanel"
+                        <div class="tab-pane fade requestTab  " id="v-pills-messages" role="tabpanel"
                             aria-labelledby="v-pills-messages-tab">
                             <div class="navTabHeader   learfix">
                                 <div class="navTabIcon">
@@ -1111,6 +1133,7 @@
                                 </div>
                                 <h4>طلب ارجاع </h4>
 
+                                <a href="#" class="float-left mainfontColor requestBack"><i class="fas fa-arrow-left"></i></a>
                             </div>
                             <div class="navBody">
                                 <form action="" class="resumeProduct clearfix">
@@ -1125,45 +1148,25 @@
                                         ارجاع المنتج
                                     </label>
                                     <h3> المرفقات</h3>
-                                    <label for="uploadfile" class="uploadImage">
-                                        <img src="" alt="" style="display: none;" >
-                                        <div class="inputText">
-                                            <i class="fas fa-image"></i>
-                                            <span>إسحب و أفلت</span>
+
+                                    <div class="form-group">
+                                        <div class="file-loading">
+                                            <input id="file-5" class="file" type="file" multiple
+                                                data-preview-file-type="any" data-upload-url="#" data-theme="fas">
                                         </div>
-                                        <input type="file" id="uploadfile" onchange="readURL(this)" multiple  accept="image/gif, image/jpeg ,application/pdf"
-                                        
-                                        >
-                                    </label>
-                                    <script>
-                                        function readURL(input) {
-                                            var $input = input;
-                                            if (input.files && input.files[0]) {
-                                                var reader = new FileReader();
-                                                reader.onload = function (e) {
-                                                    $($input).parent().find("img")
-                                                        .attr({
-                                                            'src': e.target.result,
-                                                            'data-image':e.target.result}).css("display", "block");
-                                                    $(".inputText").css("display", "none");
-                                                    
-                                                };
-                                                reader.readAsDataURL(input.files[0]);
-                                            }
-                                        }
-                                    </script>
-                                    <ul class="attachments">
-                                        <li><a href="javascript:;" class="clearfix"> اسم الصورة.jpg <div class="close"><i
-                                                        class="lni lni-close"></i></div></a></li>
-                                        <li><a href="javascript:;" class="clearfix"> اسم الصورة.jpg <div class="close"><i
-                                                        class="lni lni-close"></i></div></a></li>
-                                    </ul>
+                                    </div>
+
+                                    <!--        <ul class="attachments">
+                                        <li><a href="javascript:;" class="clearfix"> اسم الصورة.jpg <div class="close">
+                                                    <i class="lni lni-close"></i></div></a></li>
+                                        <li><a href="javascript:;" class="clearfix"> اسم الصورة.jpg <div class="close">
+                                                    <i class="lni lni-close"></i></div></a></li>
+                                    </ul>-->
                                     <label for="">سبب الارجاع</label>
                                     <textarea name="" class='form-control'></textarea>
                                     <button class="searchBtn MainBGColor whiteColor saveAddressBtn btn" type="submit">
                                         إرســال</button>
-                                        <button class="searchBtn MainBGColor whiteColor saveAddressBtn back btn" type="submit">
-                                            رجوع</button>
+
 
                                 </form>
                             </div>
@@ -1175,7 +1178,7 @@
     </section>
     <!--End Bid Container-->
     <!--Footer-->
-    <footer class="SubBGColor footer">
+    <footer class="SubBGColor  controlFooter">
 
 
         <div class="container text-center">
@@ -1218,6 +1221,16 @@
     <script src="assets/lib/elevatezoom.js"></script>
     <script src="assets/lib/fancyBox/jquery.fancybox.js"></script>
     <script src="assets/lib/dataTable/datatables.min.js"></script>
+    <!--File Upload-->
+    <script src="assets/lib/bootstrap-fileinput-master/js/plugins/piexif.js"></script>
+    <script src="assets/lib/bootstrap-fileinput-master/js/plugins/sortable.js"></script>
+    <script src="assets/lib/bootstrap-fileinput-master/js/fileinput.js"></script>
+    <script src="assets/lib/bootstrap-fileinput-master/themes/fas/theme.js"></script>
+    <script src="assets/lib/bootstrap-fileinput-master/themes/explorer-fas/theme.js"></script>
+
+
+
+
 
     <script type="text/javascript" src="assets/js/main.js"></script>
 
@@ -1225,8 +1238,43 @@
 
     <!---->
     <script>
+        $("#file-5").fileinput({
+            theme: 'fas',
+            rtl: true,
+            uploadUrl: '#', // you must set a valid URL here else you will get an error
+            allowedFileExtensions: ['jpg', 'png', 'gif'],
+            overwriteInitial: false,
+            maxFileSize: 1000,
+       
+            previewFileIcon: '<i class="fas fa-file-pdf"></i>',
+            maxFilesNum: 10,
+            previewFileIconSettings: { // configure your icon file extensions
+
+                'pdf': '<i class="fas fa-file-pdf text-danger"></i>',
+            },
+            previewZoomButtonIcons:{
+                prev: '<i class="fas fa-chevron-left"></i>',
+            next: '<i  class="fas fa-chevron-right"></i>',
+
+            },
+            allowedFileTypes: ['image', 'pdf'],
+            slugCallback: function (filename) {
+                return filename.replace('(', '_').replace(']', '_');
+            }
+        });
+        $(".file-drop-zone-title").html("اسحب وافلت هنا");
+        $("#kvFileinputModalLabel").html("تفاصيل العرض")
+        $(".hidden-xs").html("رفع");
+        $(".fileinput-upload").removeClass("btn-secondary btn-default")
+        $(".fileinput-upload").addClass("searchBtn whiteColor");
+
+
+
+    </script>
+    <script>
         $(".addNewAddress").click(function () {
-            $(this).css("display", "none")
+            $(this).parents().find("#v-Shipping").removeClass("active show")
+            $("#addNewAddressTab").addClass("active show")
         })</script>
 
     <!--DataTable-->
@@ -1252,11 +1300,20 @@
             "dom": 'rt<"bottom"i flp><"clear">'
 
         });
-        $(".resumeReq").click(function(){
+        $(".resumeReq").click(function () {
             $(this).parents().find(".requestTab").removeClass("active show")
-           $(".resumeTap").addClass("active show")
+            $(".resumeTap").addClass("active show")
         })
-
+     $(".requestBack").click(function(){
+            $(this).parents().find(".resumeTap").removeClass("active show")
+            $(".requestTab ").addClass("active show")
+        });
+        $(".shippingBack").click(function(){
+            $(this).parents().find("#addNewAddressTab").removeClass("active show")
+            $("#v-Shipping").addClass("active show");
+            $(".addNewAddress").css("display","block")
+            
+        })
     </script>
     <!--DataTable End-->
 </body>
