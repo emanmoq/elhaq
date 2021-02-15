@@ -2,8 +2,7 @@ jQuery(function ($) {
   $(window).scroll(function () {
 
     scrollTop = $(window).scrollTop();
-
-     if (scrollTop > $('header').height()) {
+     if (scrollTop > $('header').height()-50) {
 
       $('header').addClass('scrollNav');
     }
@@ -49,16 +48,12 @@ jQuery(function ($) {
       
     }
 
-    if (scrollTop -200  > 0) {
-      $('.up').stop().animate({
-        opacity: 1
-      }, 100);// show the button
-  } else {
-      $('.up').stop().animate({
-        opacity: 0
-      }, 250);// hide the button
-  }
   });
+
+
+  $('.btn-category').click(function(){
+    $('.dropdown-menu-category').toggleClass('show')
+  })
 
       if ($(window).width() < 767) {
 

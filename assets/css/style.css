@@ -50,7 +50,7 @@ body{
     text-align: right;
     font-size:14px;
     font-family:"Tajawal-Regular";
-    overflow-x: hidden;
+    overflow: hidden;
    
 }
 
@@ -675,6 +675,7 @@ right:0 !important;
 text-align: right;
 left:auto;
 padding:0;
+width:100%;
 }
 .categBtn .dropdown-item{
     font-size:16px;
@@ -2425,6 +2426,9 @@ background-color: #F27835;
 }
 .dataTables_wrapper .dataTables_paginate{
     padding-top:0;
+}
+.menudrpDown{
+    position: relative;
 }
 
     /***** mobile screen ****/
